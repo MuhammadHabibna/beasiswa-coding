@@ -1,0 +1,20 @@
+---
+import { codingCamp, metc } from '../data/programs';
+import ProgramCard from './ProgramCard.astro';
+---
+
+<section id="programs" class="bg-gray-950 py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+        <div class="mx-auto max-w-screen-md text-center mb-12 lg:mb-16">
+            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white">Program Pilihan</h2>
+            <p class="font-light text-gray-400 sm:text-xl">
+                Pilih jalur yang sesuai dengan status dan tujuan karirmu saat ini.
+            </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <ProgramCard {...codingCamp} primaryColor="blue" />
+            <ProgramCard {...metc} primaryColor="purple" />
+        </div>
+    </div>
+</section>

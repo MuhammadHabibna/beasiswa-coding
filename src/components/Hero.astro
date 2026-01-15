@@ -1,0 +1,58 @@
+---
+---
+
+<section class="relative bg-gray-950 pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+    <!-- Animated Blobs -->
+    <div class="absolute top-0 -left-4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+    <div class="absolute top-0 -right-4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-8 left-20 w-96 h-96 bg-emerald-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+
+    <div class="relative z-10 max-w-screen-xl mx-auto px-4 text-center fade-in-up">
+        <div class="inline-flex items-center justify-center px-4 py-2 mb-6 text-sm text-blue-300 bg-blue-900/30 rounded-full border border-blue-800/50 backdrop-blur-sm">
+            <span class="w-2.5 h-2.5 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+            Pendaftaran Dibuka Sekarang
+        </div>
+        
+        <h1 class="mb-6 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400">
+            Upgrade Skill IT Lewat <br class="hidden md:block" /> Beasiswa & Pelatihan Resmi
+        </h1>
+        
+        <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48">
+            Satu halaman untuk dua program unggulan: <strong class="text-white">Coding Camp 2026</strong> (powered by DBS Foundation) & <strong class="text-white">Microsoft Elevate Training Center</strong> (METC).
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4 space-y-0">
+            <a href="https://www.dicoding.com/codingcamp/registration?ref=4086292" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-800 transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50">
+                Daftar Coding Camp
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+            <a href="https://www.dicoding.com/elevate/registration?ref=4086292" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-white rounded-lg border border-gray-600 hover:bg-gray-800 focus:ring-4 focus:ring-gray-700 transition-all backdrop-blur-sm">
+                Daftar METC
+            </a>
+        </div>
+        
+        <p class="mt-4 text-xs text-gray-500">
+            *Pendaftaran dilakukan di platform Dicoding (akan diminta login).
+        </p>
+    </div>
+</section>
+
+<style>
+    @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+    }
+    .animate-blob {
+        animation: blob 7s infinite;
+    }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+</style>

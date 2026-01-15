@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  tags: string[];
+  features: string[];
+  ctaLink: string;
+  detailsLink: string;
+  primaryColor: 'blue' | 'purple';
+  image: string;
+  deadline: string;
+}
+
+const { title, subtitle, description, tags, features, ctaLink, primaryColor, image, deadline } = Astro.props;
+
+const bgClass = primaryColor === 'blue' ? 'bg-blue-900/20 border-blue-800' : 'bg-purple-900/20 border-purple-800';
+const btnClass = primaryColor === 'blue' ? 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-800' : 'bg-purple-600 hover:bg-purple-700 focus:ring-purple-800';
+const tagClass = primaryColor === 'blue' ? 'bg-blue-900 text-blue-300' : 'bg-purple-900 text-purple-300';
+---
+
+<div class={`flex flex-col p-0 mx-auto max-w-lg text-center rounded-2xl border shadow-xl ${bgClass} backdrop-blur-sm overflow-hidden group fade-in-up`}>
+    <div class="relative h-48 w-full overflow-hidden">
+        <img src={image} alt={title} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+            Deadline: {deadline}
+        </div>
+    </div>
+    
+    <div class="p-6 flex flex-col flex-grow">
+        <h3 class="mb-2 text-2xl font-bold text-white">{title}</h3>
+        <p class="font-light text-gray-400 mb-4 text-sm uppercase tracking-wide">{subtitle}</p>
+    
+    <div class="flex justify-center gap-2 mb-6">
+        {tags.map((tag) => (
+            <span class={`text-xs font-medium px-2.5 py-0.5 rounded ${tagClass}`}>
+                {tag}
+            </span>
+        ))}
+    </div>
+
+    <p class="mb-6 font-light text-gray-300 sm:text-lg">
+        {description}
+    </p>
+
+    <ul role="list" class="mb-8 space-y-4 text-left">
+        {features.map((feature) => (
+            <li class="flex items-center space-x-3">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span class="text-gray-300">{feature}</span>
+            </li>
+        ))}
+    </ul>
+    
+    <div class="mt-auto">
+        <a href={ctaLink} target="_blank" rel="noopener noreferrer" class={`text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-3 text-center w-full block transition-colors ${btnClass}`}>
+            Daftar Sekarang
+        </a>
+    </div>
+    </div>
+</div>
