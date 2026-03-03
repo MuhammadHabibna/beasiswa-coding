@@ -1,34 +1,34 @@
 export const codingCamp = {
-    title: "Coding Camp 2026",
+    title: "Coding Camp 2026 2.0",
     subtitle: "Powered by DBS Foundation",
     description: "Program pelatihan coding intensif untuk mencetak talenta digital siap kerja. Fokus pada hard skills dan soft skills.",
     tags: ["Gratis", "Online", "Scholarship"],
     features: [
-        "Fokus: AI Engineer, Data Scientist, Full Stack Web Developer",
-        "Pelatihan 100% Gratis (Online)",
-        "Sertifikat Kompetensi & Konversi SKS",
-        "Bimbingan Expert & Capstone Project",
-        "Materi soft skills & Bahasa Inggris"
+        "Pelatihan 100% Gratis Online",
+        "Sertifikat Kompetensi",
+        "Materi Standar Industri Global",
+        "Bimbingan Expert / Praktisi IT",
+        "Pilihan Role: Full-stack, Data Science, AI Engineer"
     ],
-    ctaLink: "https://www.dicoding.com/codingcamp/registration?ref=4086292",
+    ctaLink: "https://www.dicoding.com/codingcamp/registration?ref=4394693",
     detailsLink: "#programs",
-    image: "/images/coding_camp_header.jpg",
-    deadline: "31 Januari 2026"
+    image: "/images/coding_camp_header.png",
+    deadline: "31 Mei 2026"
 };
 
 export const metc = {
     title: "Microsoft Elevate Training Center",
     subtitle: "Microsoft x Dicoding",
-    description: "Pusat pelatihan untuk teknologi Microsoft, mulai dari cloud hingga AI. Cocok untuk profesional dan pelajar.",
+    description: "Akses materi pelatihan tanpa seleksi awal! Pelajari Cloud & AI, selesaikan seluruh kelas untuk raih rewards spesial, Hackathon, & Datathon.",
     tags: ["Free", "Hybrid", "Certification"],
     features: [
-        "Fokus: Cloud, AI, Teknologi Microsoft",
-        "Self Learning, Short Training, & Workshop",
-        "Hackathon, Datathon & Innovation Expo",
+        "Akses Materi Penuh Tanpa Seleksi",
+        "Fokus: Cloud, AI, Microsoft Fabric",
+        "Workshop, Hackathon, & Datathon",
         "Rewards Gadget & Merchandise",
-        "Kolaborasi Microsoft Indonesia"
+        "Innovation Expo Mei 2026"
     ],
-    ctaLink: "https://www.dicoding.com/elevate/registration?ref=4086292",
+    ctaLink: "https://www.dicoding.com/elevate/registration?ref=4394693",
     detailsLink: "#programs",
     image: "/images/metc_header.png",
     deadline: "14 Juni 2026"

@@ -1,59 +1,64 @@
 ---
 ---
-<nav class="fixed w-full z-50 top-0 start-0 border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<nav class="fixed w-full z-50 top-0 start-0 border-b border-subtle-light/60 bg-white/80 backdrop-blur-lg shadow-sm transition-all duration-300">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 transition-all duration-300 group-hover:p-5">
     <!-- Brand -->
-    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse z-50 relative">
-        <img src="/images/icon.jpg" alt="Dicoding Icon" class="w-10 h-10 object-cover rounded-lg" />
-        <span class="self-center text-xl font-bold whitespace-nowrap text-white">
-          Beasiswa <span class="text-blue-500">Coding</span> & <span class="text-purple-500">AI Hub</span>
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse z-50 relative group outline-none">
+        <div class="relative overflow-hidden rounded-lg shadow-sm border border-slate-200 hover:shadow-glow transition-all duration-300 hover:-translate-y-0.5 bg-white">
+            <img src="/images/icon.jpg" alt="Dicoding Icon" class="w-10 h-10 object-cover group-hover:scale-110 transition-transform duration-500" />
+        </div>
+        <span class="self-center text-xl font-extrabold whitespace-nowrap text-slate-800 tracking-tight transition-colors duration-300">
+          Beasiswa <span class="text-primary hover:text-primary-dark transition-colors">Coding</span> & <span class="text-secondary hover:text-purple-600 transition-colors">AI Hub</span>
         </span>
     </a>
 
     <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 z-50 relative" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="mobile-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-subtle rounded-lg md:hidden hover:bg-slate-100 hover:text-primary focus:outline-none focus:ring-2 focus:ring-slate-100 z-50 relative transition-all duration-300" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5 hamburger-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
-        <svg class="w-5 h-5 close-icon hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+        <svg class="w-5 h-5 close-icon hidden scale-75 opacity-0 transition-all duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
         </svg>
     </button>
 
     <!-- Desktop Menu -->
     <div class="hidden w-full md:block md:w-auto" id="navbar-desktop">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 bg-white/50 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent shadow-sm md:shadow-none items-center">
         <li>
-          <a href="#programs" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Programs</a>
+          <a href="#programs" class="relative block py-2 px-6 text-white bg-primary rounded-xl md:bg-primary font-bold hover:bg-primary-dark shadow-md hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden group" aria-current="page">
+             <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]"></span>
+             <span class="relative z-10">Programs</span>
+          </a>
         </li>
         <li>
-          <a href="#benefits" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Benefits</a>
+          <a href="#benefits" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">Benefits</a>
         </li>
         <li>
-          <a href="#timeline" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Timeline</a>
+          <a href="#timeline" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">Timeline</a>
         </li>
         <li>
-          <a href="#faq" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
+          <a href="#faq" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">FAQ</a>
         </li>
       </ul>
     </div>
   </div>
 
   <!-- Mobile Drawer Overlay -->
-  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-gray-950 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex justify-center items-center">
-      <ul class="flex flex-col space-y-6 text-center text-xl font-medium">
+  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden flex justify-center items-center">
+      <ul class="flex flex-col space-y-8 text-center text-2xl font-medium w-full px-8">
         <li>
-          <a href="#programs" class="mobile-link block py-2 text-white hover:text-blue-500">Programs</a>
+          <a href="#programs" class="mobile-link block py-4 px-6 bg-primary/5 border border-primary/20 rounded-2xl text-primary hover:bg-primary hover:text-white font-extrabold shadow-sm transition-all duration-300 tracking-wide hover:-translate-y-1 hover:shadow-glow">Programs</a>
         </li>
         <li>
-          <a href="#benefits" class="mobile-link block py-2 text-gray-300 hover:text-blue-500">Benefits</a>
+          <a href="#benefits" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">Benefits</a>
         </li>
         <li>
-          <a href="#timeline" class="mobile-link block py-2 text-gray-300 hover:text-blue-500">Timeline</a>
+          <a href="#timeline" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">Timeline</a>
         </li>
         <li>
-          <a href="#faq" class="mobile-link block py-2 text-gray-300 hover:text-blue-500">FAQ</a>
+          <a href="#faq" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">FAQ</a>
         </li>
       </ul>
   </div>

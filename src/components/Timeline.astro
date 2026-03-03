@@ -1,52 +1,209 @@
 ---
 ---
 
-<section id="timeline" class="bg-gray-950 py-20 px-4 fade-in-up">
+<section id="timeline" class="bg-background py-20 px-4 fade-in-up">
     <div class="max-w-screen-md mx-auto">
-        <h2 class="text-3xl font-extrabold text-center text-white mb-10">Timeline Penting</h2>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-800 mb-4 tracking-tight">Timeline Pelaksanaan</h2>
+            <p class="text-subtle font-medium">Pilih program untuk melihat jadwal detail kegiatan.</p>
+        </div>
+
+        <!-- Tab Switcher -->
+        <div class="flex p-1 bg-slate-100 rounded-xl mb-12 max-w-sm mx-auto border border-slate-200">
+            <button id="tab-metc" class="flex-1 py-2 px-4 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100">
+                METC
+            </button>
+            <button id="tab-coding" class="flex-1 py-2 px-4 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
+                Coding Camp
+            </button>
+        </div>
         
-        <div class="relative border-l border-gray-700 ml-4">                  
-            <div class="mb-10 ml-8 relative">
-                <span class="absolute flex items-center justify-center w-8 h-8 bg-blue-900 rounded-full -left-[46px] ring-8 ring-gray-950">
-                    <svg class="w-4 h-4 text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold text-white flex-wrap gap-2">
-                    Coding Camp Registration
-                    <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">OPEN</span>
-                </h3>
-                <time class="block mb-2 text-sm font-normal text-gray-500">21 Okt 2025 – 31 Jan 2026</time>
-                <p class="mb-4 text-base font-normal text-gray-400">Pendaftaran untuk mahasiswa, siswa, dan umum. Pastikan data lengkap.</p>
-            </div>
-            
-            <div class="mb-10 ml-8 relative">
-                <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-700 rounded-full -left-[46px] ring-8 ring-gray-950">
-                    <svg class="w-4 h-4 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="mb-1 text-lg font-semibold text-white">Pengumuman (Coding Camp)</h3>
-                <time class="block mb-2 text-sm font-normal text-gray-500">6 Feb 2026</time>
-                <p class="text-base font-normal text-gray-400">Pengumuman seleksi administrasi & tes substansi.</p>
+        <div class="relative border-l-2 border-slate-200 ml-4 lg:ml-8">
+            <!-- METC Timeline Container -->
+            <div id="timeline-metc" class="timeline-container active">
+                <!-- 1. Registrasi & Self Learning -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300">
+                        <span class="text-sm font-bold text-purple-600">1</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 flex-wrap gap-3">
+                            Registrasi & Self Learning Course
+                        </h3>
+                        <time class="block mb-4 text-sm font-bold text-purple-600">16 Oktober 2025 - 14 Juni 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Akses penuh ke seluruh materi pelatihan level awal (Tahap 1 & 2).</p>
+                    </div>
+                </div>
+
+                <!-- 3. Online Short Training -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300">
+                        <span class="text-sm font-bold text-purple-600">3</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Online Short Training</h3>
+                        <time class="block mb-4 text-sm font-bold text-purple-600">Oktober 2025 - Juni 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Sesi pelatihan daring berkala mengenai platform Microsoft.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Offline Workshop -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300">
+                        <span class="text-sm font-bold text-purple-600">2</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Offline Workshop Training</h3>
+                        <time class="block mb-4 text-sm font-bold text-purple-600">Desember 2025 - April 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Pelatihan tatap muka intensif di berbagai lokasi.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Hackathon & Datathon -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px) ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300">
+                        <span class="text-sm font-bold text-purple-600">6</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Hackathon & Datathon</h3>
+                        <time class="block mb-4 text-sm font-bold text-purple-600">Januari - April 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Kompetisi pengembangan solusi inovatif dan analisa data.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Deadline Belajar Seleksi -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-secondary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-secondary/20 transition-all duration-300">
+                        <span class="text-sm font-bold text-secondary">4</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="mb-2 text-lg font-bold text-slate-800">Deadline Seleksi Lanjutan</h3>
+                        <time class="block mb-4 text-sm font-bold text-secondary">26 Maret 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Penyelesaian Tahap 1 & 2 untuk syarat akses kelas Level Lanjutan.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Pengumuman Lanjutan -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-secondary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-secondary/20 transition-all duration-300">
+                        <span class="text-sm font-bold text-secondary">5</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="mb-2 text-lg font-bold text-slate-800">Pengumuman Level Lanjutan</h3>
+                        <time class="block mb-4 text-sm font-bold text-secondary">31 Maret 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Pengumuman peserta terbaik yang lolos ke kelas level lanjutan.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Innovation Expo -->
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300">
+                        <span class="text-sm font-bold text-purple-600">7</span>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium group-hover:border-slate-300 transition-all duration-300">
+                        <h3 class="mb-2 text-lg font-bold text-slate-800">Innovation Expo</h3>
+                        <time class="block mb-4 text-sm font-bold text-purple-600">Mei 2026</time>
+                        <p class="text-base font-normal text-subtle leading-relaxed">Pameran karya digital terbaik dari para peserta program.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-10 ml-8 relative">
-                <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-900 rounded-full -left-[46px] ring-8 ring-gray-950">
-                    <svg class="w-4 h-4 text-purple-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="mb-1 text-lg font-semibold text-white">METC Program</h3>
-                <time class="block mb-2 text-sm font-normal text-gray-500">Berkala / Bertahap</time>
-                <p class="text-base font-normal text-gray-400">
-                    Jadwal kegiatan (Workshop, Hackathon, dll) akan diinformasikan secara berkala kepada pendaftar.
-                </p>
+            <!-- Coding Camp Timeline Container (Hidden by default) -->
+            <div id="timeline-coding" class="timeline-container hidden">
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300">
+                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium transition-all duration-300">
+                        <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 gap-3">Pendaftaran & Seleksi <span class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded-full border border-primary/20">OPEN</span></h3>
+                        <time class="block mb-4 text-sm font-bold text-primary">3 Maret - 31 Mei 2026</time>
+                        <p class="text-base font-normal text-subtle">Proses pendaftaran dan seleksi masuk Coding Camp.</p>
+                    </div>
+                </div>
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300">
+                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium transition-all duration-300">
+                        <h3 class="mb-2 text-lg font-bold text-slate-800">Pengumuman Level Basic</h3>
+                        <time class="block mb-4 text-sm font-bold text-primary">3 Maret - 31 Mei 2026</time>
+                        <p class="text-base font-normal text-subtle">Akses kelas basic diberikan secara bertahap kepada pendaftar.</p>
+                    </div>
+                </div>
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300">
+                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
+                    </span>
+                    <div class="p-6 bg-surface border border-slate-200 rounded-2xl shadow-sm group-hover:shadow-hover-premium transition-all duration-300">
+                        <h3 class="mb-4 text-lg font-bold text-slate-800">Pengumuman Level Lanjutan</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 1:</span> 30 April 2026</div>
+                            <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 2:</span> 31 Mei 2026</div>
+                            <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 3:</span> 30 Juni 2026</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <p class="mt-8 text-center text-xs text-gray-600">
-            *Cek website resmi untuk perubahan jadwal.
+        <p class="mt-12 text-center text-sm font-medium text-subtle bg-slate-50 py-3 rounded-xl border border-slate-200 italic">
+            *Jadwal dapat berubah sewaktu-waktu. Cek dashboard secara berkala.
         </p>
     </div>
 </section>
+
+<style>
+    .timeline-container {
+        transition: opacity 0.3s ease-in-out;
+    }
+    .timeline-container.hidden {
+        display: none;
+        opacity: 0;
+    }
+    .timeline-container.active {
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+<script>
+    const setupTabs = () => {
+        const tabMetc = document.getElementById('tab-metc');
+        const tabCoding = document.getElementById('tab-coding');
+        const timelineMetc = document.getElementById('timeline-metc');
+        const timelineCoding = document.getElementById('timeline-coding');
+
+        if (!tabMetc || !tabCoding || !timelineMetc || !timelineCoding) return;
+
+        const setActiveTab = (program) => {
+            if (program === 'metc') {
+                tabMetc.classList.add('bg-white', 'text-purple-600', 'shadow-sm', 'border', 'border-purple-100');
+                tabMetc.classList.remove('text-slate-500');
+                tabCoding.classList.remove('bg-white', 'text-blue-600', 'shadow-sm', 'border', 'border-blue-100');
+                tabCoding.classList.add('text-slate-500');
+                
+                timelineMetc.classList.remove('hidden');
+                timelineMetc.classList.add('active');
+                timelineCoding.classList.remove('active');
+                timelineCoding.classList.add('hidden');
+            } else {
+                tabCoding.classList.add('bg-white', 'text-blue-600', 'shadow-sm', 'border', 'border-blue-100');
+                tabCoding.classList.remove('text-slate-500');
+                tabMetc.classList.remove('bg-white', 'text-purple-600', 'shadow-sm', 'border', 'border-purple-100');
+                tabMetc.classList.add('text-slate-500');
+
+                timelineCoding.classList.remove('hidden');
+                timelineCoding.classList.add('active');
+                timelineMetc.classList.remove('active');
+                timelineMetc.classList.add('hidden');
+            }
+        };
+
+        tabMetc.addEventListener('click', () => setActiveTab('metc'));
+        tabCoding.addEventListener('click', () => setActiveTab('coding'));
+    };
+
+    // Run on swap and initial load
+    document.addEventListener('astro:page-load', setupTabs);
+    setupTabs();
+</script>

@@ -11,7 +11,7 @@ const { title, description = "Program Beasiswa Coding & AI Hub" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="id" class="dark">
+<html lang="id">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -23,7 +23,7 @@ const { title, description = "Program Beasiswa Coding & AI Hub" } = Astro.props;
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
-	<body class="bg-gray-950 text-gray-100 selection:bg-blue-500 selection:text-white pb-24 md:pb-0">
+	<body class="bg-background text-slate-800 selection:bg-primary/20 selection:text-primary-dark pb-24 md:pb-0 transition-colors duration-300">
 		<slot />
         <StickyBottomCTA />
         

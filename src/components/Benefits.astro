@@ -1,65 +1,68 @@
 ---
 ---
 
-<section id="benefits" class="bg-gray-900 py-20 px-4">
-    <div class="max-w-screen-xl mx-auto fade-in-up">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-white mb-4">Perbandingan Program</h2>
-            <p class="text-gray-400">Temukan yang paling pas untukmu.</p>
+---
+---
+
+<section id="benefits" class="bg-background py-20 px-4">
+    <div class="max-[min(100vw,768px)] max-w-screen-xl mx-auto fade-in-up">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-slate-800 mb-4 tracking-tight">Perbandingan Program</h2>
+            <p class="text-subtle font-medium text-lg">Temukan yang paling pas untukmu.</p>
         </div>
 
         <!-- Desktop View (Table) -->
-        <div class="hidden md:block relative overflow-x-auto shadow-md sm:rounded-lg max-w-4xl mx-auto">
-            <table class="w-full text-sm text-left text-gray-400">
-                <thead class="text-xs text-gray-300 uppercase bg-gray-800">
+        <div class="hidden md:block relative overflow-x-auto shadow-sm sm:rounded-2xl max-w-4xl mx-auto border border-subtle-light group hover:shadow-hover-premium transition-shadow duration-300">
+            <table class="w-full text-sm text-left text-subtle">
+                <thead class="text-xs text-slate-700 uppercase bg-slate-50 border-b border-subtle-light">
                     <tr>
-                        <th scope="col" class="px-6 py-4 w-1/3">Fitur</th>
-                        <th scope="col" class="px-6 py-4 w-1/3 text-blue-400">Coding Camp 2026</th>
-                        <th scope="col" class="px-6 py-4 w-1/3 text-purple-400">METC</th>
+                        <th scope="col" class="px-8 py-5 w-1/3 tracking-wider font-extrabold">Fitur</th>
+                        <th scope="col" class="px-8 py-5 w-1/3 text-primary tracking-wider font-extrabold">Coding Camp 2026</th>
+                        <th scope="col" class="px-8 py-5 w-1/3 text-secondary tracking-wider font-extrabold">METC</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-gray-900 border-b border-gray-800 hover:bg-gray-800 transition-colors">
-                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
+                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Target Audience
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Mahasiswa, Siswa SMK, Umum
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Tech Professional, Aspiring Talent
                         </td>
                     </tr>
-                    <tr class="bg-gray-900 border-b border-gray-800 hover:bg-gray-800 transition-colors">
-                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
+                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Fokus Utama
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Hard Skills (Web/AI/Data) + Soft Skills
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Microsoft Tech (Cloud, AI)
                         </td>
                     </tr>
-                    <tr class="bg-gray-900 border-b border-gray-800 hover:bg-gray-800 transition-colors">
-                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
+                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Sertifikat
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Sertifikat Kompetensi Dicoding
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Certificate of Completion / Badge
                         </td>
                     </tr>
-                    <tr class="bg-gray-900 hover:bg-gray-800 transition-colors">
-                        <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
+                    <tr class="bg-surface hover:bg-slate-50 transition-colors duration-300">
+                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Highlight
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Capstone Project & Konversi SKS
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-8 py-5 font-medium">
                             Hackathon, Workshop & Rewards
                         </td>
                     </tr>
@@ -68,49 +71,51 @@
         </div>
 
         <!-- Mobile View (Comparison Cards) -->
-        <div class="md:hidden space-y-6">
+        <div class="md:hidden space-y-8">
             <!-- Coding Camp Card -->
-            <div class="p-6 bg-gray-800 rounded-lg border border-gray-700">
-                <h3 class="text-xl font-bold text-blue-400 mb-4">Coding Camp 2026</h3>
-                <ul class="space-y-4 text-gray-300">
+            <div class="p-8 bg-surface rounded-2xl border border-subtle-light shadow-sm hover:shadow-hover-premium transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-10 -mt-10 blur-xl"></div>
+                <h3 class="text-2xl font-black text-primary mb-6 tracking-tight relative z-10">Coding Camp 2026</h3>
+                <ul class="space-y-6 text-slate-700 relative z-10">
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Target Audience</span>
-                        Mahasiswa, Siswa SMK, Umum
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
+                        <span class="font-medium">Mahasiswa, Siswa SMK, Umum</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Fokus</span>
-                        Hard Skills (Web/AI/Data) + Soft Skills
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fokus</span>
+                        <span class="font-medium">Hard Skills (Web/AI/Data) + Soft Skills</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Sertifikat</span>
-                        Sertifikat Kompetensi Dicoding
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Sertifikat</span>
+                        <span class="font-medium">Sertifikat Kompetensi Dicoding</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Highlight</span>
-                        Capstone Project & Konversi SKS
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Highlight</span>
+                        <span class="font-medium">Capstone Project & Konversi SKS</span>
                     </li>
                 </ul>
             </div>
 
             <!-- METC Card -->
-             <div class="p-6 bg-gray-800 rounded-lg border border-gray-700">
-                <h3 class="text-xl font-bold text-purple-400 mb-4">METC</h3>
-                <ul class="space-y-4 text-gray-300">
+             <div class="p-8 bg-surface rounded-2xl border border-subtle-light shadow-sm hover:shadow-hover-premium transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-full -mr-10 -mt-10 blur-xl"></div>
+                <h3 class="text-2xl font-black text-secondary mb-6 tracking-tight relative z-10">METC</h3>
+                <ul class="space-y-6 text-slate-700 relative z-10">
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Target Audience</span>
-                        Tech Professional, Aspiring Talent
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
+                        <span class="font-medium">Tech Professional, Aspiring Talent</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Fokus</span>
-                        Microsoft Tech (Cloud, AI)
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fokus</span>
+                        <span class="font-medium">Microsoft Tech (Cloud, AI)</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Sertifikat</span>
-                        Certificate of Completion / Badge
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Sertifikat</span>
+                        <span class="font-medium">Certificate of Completion / Badge</span>
                     </li>
                     <li>
-                        <span class="block text-xs text-gray-500 uppercase">Highlight</span>
-                        Hackathon, Workshop & Rewards
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Highlight</span>
+                        <span class="font-medium">Hackathon, Workshop & Rewards</span>
                     </li>
                 </ul>
             </div>
