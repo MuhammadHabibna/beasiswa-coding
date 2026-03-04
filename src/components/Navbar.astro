@@ -46,21 +46,39 @@
   </div>
 
   <!-- Mobile Drawer Overlay -->
-  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden flex justify-center items-center">
-      <ul class="flex flex-col space-y-8 text-center text-2xl font-medium w-full px-8">
+  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden flex flex-col pt-24 px-6 pb-8">
+      <ul class="flex flex-col space-y-4 text-xl font-bold w-full">
         <li>
-          <a href="#programs" class="mobile-link block py-4 px-6 bg-primary/5 border border-primary/20 rounded-2xl text-primary hover:bg-primary hover:text-white font-extrabold shadow-sm transition-all duration-300 tracking-wide hover:-translate-y-1 hover:shadow-glow">Programs</a>
+          <a href="#programs" class="mobile-link flex items-center justify-between py-4 px-6 bg-blue-50/50 border border-blue-100 rounded-2xl text-blue-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 shadow-sm transition-all duration-300 group">
+              <span>Programs</span>
+              <svg class="w-5 h-5 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </li>
         <li>
-          <a href="#benefits" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">Benefits</a>
+          <a href="#benefits" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
+              <span>Benefits</span>
+              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </li>
         <li>
-          <a href="#timeline" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">Timeline</a>
+          <a href="#timeline" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
+              <span>Timeline</span>
+              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </li>
         <li>
-          <a href="#faq" class="mobile-link block py-2 text-slate-600 hover:text-primary hover:scale-105 transition-all duration-300">FAQ</a>
+          <a href="#faq" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
+              <span>FAQ</span>
+              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </li>
       </ul>
+      
+      <!-- Mobile Drawer Footer Info -->
+      <div class="mt-auto items-center justify-center flex flex-col space-y-4 pt-8 border-t border-slate-100">
+           <img src="/images/icon.jpg" alt="Dicoding Logo" class="w-12 h-12 rounded-xl shadow-sm border border-slate-200" />
+           <p class="text-sm font-medium text-slate-500 text-center">Beasiswa Coding & AI Hub<br/>© 2026 Dicoding Promo</p>
+      </div>
   </div>
 </nav>
 
