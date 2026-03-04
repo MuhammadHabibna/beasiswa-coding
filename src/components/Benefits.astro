@@ -4,25 +4,31 @@
 ---
 ---
 
-<section id="benefits" class="bg-background py-20 px-4">
-    <div class="max-[min(100vw,768px)] max-w-screen-xl mx-auto fade-in-up">
+<section id="benefits" class="bg-slate-50 py-20 px-4 relative overflow-hidden">
+    <!-- Decorative Vector Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-blue-100/40 via-purple-100/20 to-transparent blur-3xl rounded-full opacity-60"></div>
+    </div>
+
+    <div class="max-[min(100vw,768px)] max-w-screen-xl mx-auto relative z-10 fade-in-up">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-extrabold text-slate-800 mb-4 tracking-tight">Perbandingan Program</h2>
             <p class="text-subtle font-medium text-lg">Temukan yang paling pas untukmu.</p>
         </div>
 
         <!-- Desktop View (Table) -->
-        <div class="hidden md:block relative overflow-x-auto shadow-sm sm:rounded-2xl max-w-4xl mx-auto border border-subtle-light group hover:shadow-hover-premium transition-shadow duration-300">
-            <table class="w-full text-sm text-left text-subtle">
-                <thead class="text-xs text-slate-700 uppercase bg-slate-50 border-b border-subtle-light">
+        <div class="hidden md:block relative overflow-hidden shadow-lg sm:rounded-3xl max-w-4xl mx-auto border border-slate-200 bg-white/80 backdrop-blur-md group hover:shadow-xl transition-shadow duration-500">
+            <div class="absolute inset-0 bg-gradient-to-br from-transparent via-slate-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 pointer-events-none"></div>
+            <table class="w-full text-sm text-left text-slate-600 relative z-10">
+                <thead class="text-xs text-slate-700 uppercase bg-slate-100/50 border-b border-slate-200">
                     <tr>
-                        <th scope="col" class="px-8 py-5 w-1/3 tracking-wider font-extrabold">Fitur</th>
-                        <th scope="col" class="px-8 py-5 w-1/3 text-primary tracking-wider font-extrabold">Coding Camp 2026</th>
-                        <th scope="col" class="px-8 py-5 w-1/3 text-secondary tracking-wider font-extrabold">METC</th>
+                        <th scope="col" class="px-8 py-6 w-1/3 tracking-wider font-extrabold">Fitur</th>
+                        <th scope="col" class="px-8 py-6 w-1/3 text-blue-700 tracking-wider font-extrabold">Coding Camp 2026</th>
+                        <th scope="col" class="px-8 py-6 w-1/3 text-purple-700 tracking-wider font-extrabold">METC</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
                         <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Target Audience
                         </th>
@@ -33,7 +39,7 @@
                             Tech Professional, Aspiring Talent
                         </td>
                     </tr>
-                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
                         <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Fokus Utama
                         </th>
@@ -44,7 +50,7 @@
                             Microsoft Tech (Cloud, AI)
                         </td>
                     </tr>
-                    <tr class="bg-surface border-b border-slate-100 hover:bg-slate-50 transition-colors duration-300">
+                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
                         <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Sertifikat
                         </th>
@@ -55,7 +61,7 @@
                             Certificate of Completion / Badge
                         </td>
                     </tr>
-                    <tr class="bg-surface hover:bg-slate-50 transition-colors duration-300">
+                    <tr class="hover:bg-blue-50/30 transition-colors duration-300">
                         <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
                             Highlight
                         </th>
@@ -73,9 +79,10 @@
         <!-- Mobile View (Comparison Cards) -->
         <div class="md:hidden space-y-8">
             <!-- Coding Camp Card -->
-            <div class="p-8 bg-surface rounded-2xl border border-subtle-light shadow-sm hover:shadow-hover-premium transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-10 -mt-10 blur-xl"></div>
-                <h3 class="text-2xl font-black text-primary mb-6 tracking-tight relative z-10">Coding Camp 2026</h3>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group/card">
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-blue-50/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 z-0"></div>
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-400/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover/card:bg-blue-400/20 transition-colors duration-700"></div>
+                <h3 class="text-2xl font-black text-blue-700 mb-6 tracking-tight relative z-10">Coding Camp 2026</h3>
                 <ul class="space-y-6 text-slate-700 relative z-10">
                     <li>
                         <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
@@ -97,9 +104,10 @@
             </div>
 
             <!-- METC Card -->
-             <div class="p-8 bg-surface rounded-2xl border border-subtle-light shadow-sm hover:shadow-hover-premium transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-full -mr-10 -mt-10 blur-xl"></div>
-                <h3 class="text-2xl font-black text-secondary mb-6 tracking-tight relative z-10">METC</h3>
+             <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group/card">
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-purple-50/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 z-0"></div>
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-400/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover/card:bg-purple-400/20 transition-colors duration-700"></div>
+                <h3 class="text-2xl font-black text-purple-700 mb-6 tracking-tight relative z-10">METC</h3>
                 <ul class="space-y-6 text-slate-700 relative z-10">
                     <li>
                         <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>

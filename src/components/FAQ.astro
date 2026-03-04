@@ -27,16 +27,23 @@ const faqs = [
 ];
 ---
 
-<section id="faq" class="bg-surface py-20 px-4 fade-in-up border-y border-subtle-light/70">
-    <div class="max-[min(100vw,768px)] max-w-screen-md mx-auto">
+<section id="faq" class="bg-white py-20 px-4 relative overflow-hidden border-y border-slate-100">
+    <!-- Decorative Vector Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-100/40 via-purple-100/20 to-transparent blur-3xl rounded-full opacity-60 translate-x-1/3 -translate-y-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-purple-100/40 via-blue-100/20 to-transparent blur-3xl rounded-full opacity-60 -translate-x-1/3 translate-y-1/3"></div>
+    </div>
+
+    <div class="max-[min(100vw,768px)] max-w-screen-md mx-auto relative z-10 fade-in-up">
         <h2 class="mb-10 text-3xl tracking-tight font-extrabold text-center text-slate-800">Frequently Asked Questions</h2>
         <div class="space-y-4">
             {faqs.map((faq) => (
-                <details class="group bg-slate-50 rounded-2xl border border-subtle-light open:bg-white open:ring-1 open:ring-primary/20 open:shadow-sm transition-all duration-300">
-                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-5 px-6 text-slate-800 text-lg hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-2xl group-open:rounded-b-none outline-none">
-                        <span>{faq.question}</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 bg-white p-1 rounded-full border border-slate-200 group-hover:border-primary/30">
-                            <svg fill="none" class="h-5 w-5 text-slate-500 group-hover:text-primary" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <details class="group bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 open:bg-white open:ring-1 open:ring-blue-400/30 open:shadow-lg shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-5 px-6 text-slate-800 text-lg hover:text-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50 rounded-2xl group-open:rounded-b-none outline-none relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 z-0 pointer-events-none"></div>
+                        <span class="relative z-10">{faq.question}</span>
+                        <span class="relative z-10 transition-transform duration-300 group-open:rotate-180 bg-white p-1 rounded-full border border-slate-200 group-hover:border-blue-300 shadow-sm">
+                            <svg fill="none" class="h-5 w-5 text-slate-500 group-hover:text-blue-600" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </span>
