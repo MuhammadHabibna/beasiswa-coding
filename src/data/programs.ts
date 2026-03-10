@@ -33,3 +33,21 @@ export const metc = {
     image: "/images/metc_header.png",
     deadline: "14 Juni 2026"
 };
+
+export const pijak = {
+    title: "Pijak x IBM SkillsBuild",
+    subtitle: "Generasi AI Indonesia",
+    description: "Membekali individu dengan keterampilan teknis esensial di pasar kerja modern guna menghasilkan AI Engineer andal.",
+    tags: ["Free", "Online", "AI Engineer"],
+    features: [
+        "Pelatihan 100% Gratis Online",
+        "Kurikulum Standar Industri Global",
+        "Materi Dasar Python hingga Deep Learning",
+        "Akses Materi Seumur Hidup",
+        "Koneksi dengan Developer & Pakar"
+    ],
+    ctaLink: "https://www.dicoding.com/pijak/registration?ref=4394693",
+    detailsLink: "#programs",
+    image: "/images/pijak_header.png",
+    deadline: "30 April 2026"
+};

@@ -1,5 +1,5 @@
 ---
-import { codingCamp, metc } from '../data/programs';
+import { codingCamp, metc, pijak } from '../data/programs';
 import ProgramCard from './ProgramCard.astro';
 ---
 
@@ -12,9 +12,10 @@ import ProgramCard from './ProgramCard.astro';
             </p>
         </div>
         
-        <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
             <ProgramCard {...codingCamp} primaryColor="blue" />
             <ProgramCard {...metc} primaryColor="purple" />
+            <ProgramCard {...pijak} primaryColor="emerald" />
         </div>
     </div>
 </section>

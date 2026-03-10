@@ -1,51 +1,73 @@
 ---
 ---
 
-<section class="relative bg-background pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden min-h-[90vh] flex flex-col justify-center">
+<section class="relative bg-slate-50 pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[95vh] flex flex-col justify-center border-b border-slate-200">
+    <!-- Grid Pattern Background -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0"></div>
+    
     <!-- Animated Soft Blobs -->
-    <div class="absolute top-0 -left-4 w-96 h-96 bg-primary/10 rounded-full mix-blend-multiply filter blur-[100px] opacity-60 animate-blob"></div>
-    <div class="absolute top-0 -right-4 w-96 h-96 bg-secondary/10 rounded-full mix-blend-multiply filter blur-[100px] opacity-60 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-8 left-20 w-96 h-96 bg-accent/10 rounded-full mix-blend-multiply filter blur-[100px] opacity-50 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob z-0"></div>
+    <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-purple-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob animation-delay-2000 z-0"></div>
+    <div class="absolute bottom-[-20%] left-[20%] w-[600px] h-[600px] bg-emerald-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-60 animate-blob animation-delay-4000 z-0"></div>
 
     <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 text-center fade-in-up">
-        <div class="inline-flex items-center justify-center px-4 py-1.5 md:px-5 md:py-2 mb-6 md:mb-8 text-xs md:text-sm font-medium text-primary bg-primary/5 rounded-full border border-primary/20 shadow-sm transition-colors hover:shadow-md duration-300">
-            <span class="relative flex h-2.5 w-2.5 md:h-3 md:w-3 mr-2 md:mr-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/70 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-primary"></span>
+        
+        <!-- Premium Badge -->
+        <div class="inline-flex items-center justify-center px-5 py-2 mb-8 md:mb-10 text-xs md:text-sm font-bold text-slate-700 bg-white/60 backdrop-blur-md rounded-full border border-slate-200/50 shadow-xl shadow-slate-200/20 transition-all hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/80 duration-300 ring-1 ring-slate-900/5 cursor-default">
+            <span class="relative flex h-3 w-3 mr-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            Pendaftaran Dibuka Sekarang
+            Pendaftaran Program Resmi Dibuka
         </div>
         
-        <h1 class="mb-4 md:mb-8 text-[2.5rem] leading-[1.1] sm:text-5xl font-extrabold tracking-tight md:leading-snug lg:leading-loose lg:text-7xl">
-            <span class="text-slate-800 hidden sm:inline">Upgrade Skill IT Lewat</span>
-            <span class="text-slate-800 sm:hidden block mb-1">Upgrade Skill IT</span>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent py-1 md:py-2 drop-shadow-sm leading-normal block sm:inline">
-                Beasiswa & Pelatihan Resmi
+        <!-- Main Typography -->
+        <h1 class="mb-6 md:mb-8 text-[2.75rem] leading-[1.1] sm:text-6xl font-extrabold tracking-tight md:leading-tight lg:leading-[1.15] lg:text-[5rem] drop-shadow-sm">
+            <span class="text-slate-800 block mb-2 sm:mb-4">Upgrade Skill IT Lewat</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 drop-shadow-sm leading-normal block pb-2">
+                Beasiswa & Pelatihan
             </span>
         </h1>
         
-        <p class="mb-8 md:mb-10 text-base sm:text-lg font-medium text-subtle lg:text-xl px-2 sm:px-16 xl:px-48 transition-colors duration-300">
-            Satu halaman untuk dua program unggulan: <strong class="text-slate-700 font-bold">Coding Camp 2026</strong> (powered by DBS Foundation) & <strong class="text-slate-700 font-bold">Microsoft Elevate Training Center</strong> (METC).
+        <p class="mb-10 md:mb-14 text-base sm:text-lg font-medium text-slate-600 lg:text-xl px-2 sm:px-16 xl:px-56 transition-colors duration-300 leading-relaxed">
+            Satu portal untuk mendaftar program unggulan hasil kolaborasi dengan tech giant. <br class="hidden md:block" /> Pilih <strong class="text-slate-800 font-bold bg-blue-100/50 px-2 py-0.5 rounded">Coding Camp</strong>, <strong class="text-slate-800 font-bold bg-purple-100/50 px-2 py-0.5 rounded">METC</strong>, atau <strong class="text-slate-800 font-bold bg-emerald-100/50 px-2 py-0.5 rounded">Pijak x IBM</strong>.
         </p>
         
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 w-full max-w-md mx-auto sm:max-w-none relative z-20">
-            <a href="https://www.dicoding.com/codingcamp/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-3.5 px-6 md:py-4 md:px-8 text-sm md:text-base font-bold text-center text-white rounded-xl bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 transition-all shadow-premium hover:shadow-glow hover:-translate-y-1 md:hover:-translate-y-2 duration-300 overflow-hidden w-full sm:w-auto">
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 w-full max-w-lg mx-auto sm:max-w-none relative z-20 flex-wrap">
+            <a href="https://www.dicoding.com/codingcamp/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-white rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 focus:ring-4 focus:ring-blue-300 transition-all shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-1.5 duration-300 overflow-hidden w-full sm:w-auto border border-blue-500/50">
                 <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
-                <span class="relative z-10 flex items-center">
+                <span class="relative z-10 flex items-center gap-2">
                     Daftar Coding Camp
-                    <svg class="w-4 h-4 ms-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
                 </span>
             </a>
-            <a href="https://www.dicoding.com/elevate/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-3.5 px-6 md:py-4 md:px-8 text-sm md:text-base font-bold text-center text-slate-700 bg-surface rounded-xl border-2 border-subtle-light hover:bg-subtle-light hover:border-slate-300 hover:text-primary focus:ring-4 focus:ring-slate-100 transition-all shadow-sm hover:shadow-hover-premium hover:-translate-y-1 md:hover:-translate-y-2 duration-300 w-full sm:w-auto">
-                Daftar METC
+            <a href="https://www.dicoding.com/elevate/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-purple-700 bg-white/80 backdrop-blur-md rounded-2xl border border-slate-200 hover:border-purple-300 hover:bg-purple-50 focus:ring-4 focus:ring-purple-100 transition-all shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-1.5 duration-300 w-full sm:w-auto">
+                <span class="relative z-10 flex items-center gap-2">
+                    Daftar METC
+                </span>
+            </a>
+            <a href="https://www.dicoding.com/pijak/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-white rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 focus:ring-4 focus:ring-emerald-300 transition-all shadow-xl shadow-emerald-500/30 hover:shadow-2xl hover:shadow-emerald-500/40 hover:-translate-y-1.5 duration-300 overflow-hidden w-full sm:w-auto border border-emerald-400/50">
+                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] animation-delay-500"></span>
+                <span class="relative z-10 flex items-center gap-2">
+                    Daftar Pijak
+                </span>
             </a>
         </div>
         
-        <p class="mt-8 text-sm text-subtle font-medium">
-            *Pendaftaran dilakukan di platform Dicoding (akan diminta login).
+        <p class="mt-8 text-sm text-slate-500 font-medium flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Proses registrasi dilakukan di Dicoding.com
         </p>
+
+        <!-- Partner Logos -->
+        <div class="mt-16 pt-8 border-t border-slate-200/60 relative w-full overflow-hidden">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-center">Berkolaborasi Dengan</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="text-2xl font-black text-slate-800 tracking-tighter hover:text-red-600 transition-colors">DBS <span class="text-slate-600 font-semibold tracking-normal">Foundation</span></span>
+                <span class="text-2xl font-black text-slate-800 tracking-tight hover:text-blue-600 transition-colors">Microsoft</span>
+                <span class="text-2xl font-black text-slate-800 tracking-tight hover:text-blue-700 transition-colors">IBM <span class="text-slate-600 font-semibold text-lg tracking-normal">SkillsBuild</span></span>
+            </div>
+        </div>
     </div>
 </section>
 

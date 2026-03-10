@@ -9,12 +9,15 @@
         </div>
 
         <!-- Tab Switcher -->
-        <div class="flex p-1 bg-slate-100 rounded-xl mb-12 max-w-sm mx-auto border border-slate-200">
-            <button id="tab-metc" class="flex-1 py-2 px-4 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100">
+        <div class="flex p-1 bg-slate-100 rounded-xl mb-12 max-w-lg mx-auto border border-slate-200">
+            <button id="tab-metc" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100">
                 METC
             </button>
-            <button id="tab-coding" class="flex-1 py-2 px-4 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
+            <button id="tab-coding" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
                 Coding Camp
+            </button>
+            <button id="tab-pijak" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
+                Pijak x IBM
             </button>
         </div>
         
@@ -174,6 +177,51 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Pijak Timeline Container (Hidden by default) -->
+            <div id="timeline-pijak" class="timeline-container hidden">
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-emerald-200 transition-all duration-300 z-20">
+                        <span class="text-sm font-bold text-emerald-600">1</span>
+                    </span>
+                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-emerald-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
+                        <div class="relative z-10">
+                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 gap-3">Pendaftaran & Seleksi Kelas <span class="bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded-full border border-emerald-200">OPEN</span></h3>
+                            <time class="block mb-4 text-sm font-bold text-emerald-600">10 Maret - 30 April 2026</time>
+                            <p class="text-base font-normal text-subtle">Pendaftaran Pijak dan penyelesaian kelas seleksi IBM SkillsBuild.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-emerald-200 transition-all duration-300 z-20">
+                        <span class="text-sm font-bold text-emerald-600">2</span>
+                    </span>
+                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-emerald-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
+                        <div class="relative z-10">
+                            <h3 class="mb-2 text-lg font-bold text-slate-800">Penutupan Pendaftaran</h3>
+                            <time class="block mb-4 text-sm font-bold text-emerald-600">30 April 2026</time>
+                            <p class="text-base font-normal text-subtle">Batas akhir pendaftaran program beasiswa Pijak.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-emerald-200 transition-all duration-300 z-20">
+                        <span class="text-sm font-bold text-emerald-600">3</span>
+                    </span>
+                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-emerald-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-emerald-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
+                        <div class="relative z-10">
+                            <h3 class="mb-2 text-lg font-bold text-slate-800">Pengumuman Penerimaan</h3>
+                            <time class="block mb-4 text-sm font-bold text-emerald-600">5 Mei 2026</time>
+                            <p class="text-base font-normal text-subtle">Pengumuman hasil seleksi peserta Pijak x IBM SkillsBuild.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <p class="mt-12 text-center text-sm font-medium text-subtle bg-slate-50 py-3 rounded-xl border border-slate-200 italic">
@@ -200,37 +248,41 @@
     const setupTabs = () => {
         const tabMetc = document.getElementById('tab-metc');
         const tabCoding = document.getElementById('tab-coding');
+        const tabPijak = document.getElementById('tab-pijak');
         const timelineMetc = document.getElementById('timeline-metc');
         const timelineCoding = document.getElementById('timeline-coding');
+        const timelinePijak = document.getElementById('timeline-pijak');
 
-        if (!tabMetc || !tabCoding || !timelineMetc || !timelineCoding) return;
+        if (!tabMetc || !tabCoding || !tabPijak || !timelineMetc || !timelineCoding || !timelinePijak) return;
 
         const setActiveTab = (program) => {
+            // Reset all
+            [tabMetc, tabCoding, tabPijak].forEach(tab => {
+                tab.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700';
+            });
+            [timelineMetc, timelineCoding, timelinePijak].forEach(tl => {
+                tl.classList.remove('active');
+                tl.classList.add('hidden');
+            });
+
             if (program === 'metc') {
-                tabMetc.classList.add('bg-white', 'text-purple-600', 'shadow-sm', 'border', 'border-purple-100');
-                tabMetc.classList.remove('text-slate-500');
-                tabCoding.classList.remove('bg-white', 'text-blue-600', 'shadow-sm', 'border', 'border-blue-100');
-                tabCoding.classList.add('text-slate-500');
-                
+                tabMetc.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100';
                 timelineMetc.classList.remove('hidden');
                 timelineMetc.classList.add('active');
-                timelineCoding.classList.remove('active');
-                timelineCoding.classList.add('hidden');
-            } else {
-                tabCoding.classList.add('bg-white', 'text-blue-600', 'shadow-sm', 'border', 'border-blue-100');
-                tabCoding.classList.remove('text-slate-500');
-                tabMetc.classList.remove('bg-white', 'text-purple-600', 'shadow-sm', 'border', 'border-purple-100');
-                tabMetc.classList.add('text-slate-500');
-
+            } else if (program === 'coding') {
+                tabCoding.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-blue-600 shadow-sm border border-blue-100';
                 timelineCoding.classList.remove('hidden');
                 timelineCoding.classList.add('active');
-                timelineMetc.classList.remove('active');
-                timelineMetc.classList.add('hidden');
+            } else if (program === 'pijak') {
+                tabPijak.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-emerald-600 shadow-sm border border-emerald-100';
+                timelinePijak.classList.remove('hidden');
+                timelinePijak.classList.add('active');
             }
         };
 
         tabMetc.addEventListener('click', () => setActiveTab('metc'));
         tabCoding.addEventListener('click', () => setActiveTab('coding'));
+        tabPijak.addEventListener('click', () => setActiveTab('pijak'));
     };
 
     // Run on swap and initial load
