@@ -34,20 +34,20 @@ export const metc = {
     deadline: "14 Juni 2026"
 };
 
-export const pijak = {
-    title: "Pijak x IBM SkillsBuild",
-    subtitle: "Generasi AI Indonesia",
-    description: "Membekali individu dengan keterampilan teknis esensial di pasar kerja modern guna menghasilkan AI Engineer andal.",
-    tags: ["Free", "Online", "AI Engineer"],
+export const aws = {
+    title: "AWS AI Academy 2026",
+    subtitle: "Amazon Web Services",
+    description: "Program beasiswa untuk meningkatkan kompetensi dalam bidang AI Development dari Amazon Web Services (AWS) untuk 40.000 peserta.",
+    tags: ["Free", "Online", "AI & Cloud"],
     features: [
-        "Pelatihan 100% Gratis Online",
-        "Kurikulum Standar Industri Global",
-        "Materi Dasar Python hingga Deep Learning",
-        "Akses Materi Seumur Hidup",
-        "Koneksi dengan Developer & Pakar"
+        "Beasiswa 40.000 Peserta se-Indonesia",
+        "Kurikulum Standar Industri Global AWS",
+        "Machine Learning & Generative AI",
+        "Sertifikat Kelulusan Diakui Industri",
+        "Hackathon & Bimbingan Fasilitator Expert"
     ],
-    ctaLink: "https://www.dicoding.com/pijak/registration?ref=4394693",
+    ctaLink: "https://aws.dicoding.com/register?ref=4086292",
     detailsLink: "#programs",
-    image: "/images/pijak_header.png",
-    deadline: "30 April 2026"
+    image: "/images/aws-header.jpg",
+    deadline: "25 Desember 2026"
 };
