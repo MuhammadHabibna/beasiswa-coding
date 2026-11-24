@@ -37,9 +37,15 @@ import { pijak2027 } from '../data/programs';
 
     <!-- Desktop Menu -->
     <div class="hidden w-full md:block md:w-auto" id="navbar-desktop">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 rounded-xl md:flex-row md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 items-center text-sm">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 rounded-xl md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0 items-center text-sm">
         <li>
-          <a href="#programs" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Program Beasiswa</a>
+          <a href="#programs" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Beasiswa</a>
+        </li>
+        <li>
+          <a href="#produk" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold flex items-center gap-1">
+            <span>Produk Digital</span>
+            <span class="text-[9px] bg-blue-100 text-blue-700 font-bold px-1.5 py-0.5 rounded-full">Lynk.id</span>
+          </a>
         </li>
         <li>
           <a href="#tentang" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Pijak 2027</a>
@@ -71,6 +77,12 @@ import { pijak2027 } from '../data/programs';
         <li>
           <a href="#programs" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
               <span>Katalog Beasiswa</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#produk" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Produk &amp; Source Code (Lynk.id)</span>
               <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </li>

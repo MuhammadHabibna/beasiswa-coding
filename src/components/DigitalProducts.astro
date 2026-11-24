@@ -1,0 +1,158 @@
+---
+import { featuredProducts, lynkStoreInfo } from '../data/digitalProducts';
+---
+
+<section id="produk" class="bg-white py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+  <!-- Subtle Background Gradients -->
+  <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none z-0"></div>
+  <div class="absolute top-1/3 right-10 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none z-0"></div>
+  <div class="absolute bottom-10 left-10 w-80 h-80 bg-indigo-100/30 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10 px-2 sm:px-4">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="badge-pill-blue mb-3.5">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        🛠️ Developer Store &amp; Resource Hub
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-dark-slate tracking-tight leading-tight mb-4">
+        Source Code, Dataset &amp; <span class="text-primary">Produk Digital</span>
+      </h2>
+      <p class="text-subtle text-base sm:text-lg leading-relaxed">
+        Koleksi template web modern, source code interaktif, dataset NLP, dan e-course AI/ML siap pakai dari <strong class="text-dark-slate font-semibold">{lynkStoreInfo.username}</strong> di Lynk.id untuk mengakselerasi proyek Anda.
+      </p>
+
+      <!-- Store Quick Link Pill -->
+      <div class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 shadow-xs text-xs font-semibold text-slate-700">
+        <span>Official Store:</span>
+        <a href={lynkStoreInfo.storeUrl} target="_blank" rel="noopener noreferrer" class="text-primary hover:text-blue-700 font-bold underline inline-flex items-center gap-1">
+          lynk.id/habib.creations
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto items-stretch">
+      {featuredProducts.map((product) => (
+        <div class="flex flex-col bg-white rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-lg hover:border-blue-400 transition-all duration-300 overflow-hidden group">
+          
+          <!-- Image Container -->
+          <div class="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+            <img 
+              src={product.image} 
+              alt={product.title} 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+              loading="lazy" 
+              onerror="this.src='/images/pijak_banner_2027.jpg'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            
+            <!-- Category & Badge -->
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/20">
+                {product.category}
+              </span>
+              {product.badge && (
+                <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-blue-600/90 backdrop-blur-md text-white border border-blue-400/30 shadow-xs">
+                  {product.badge}
+                </span>
+              )}
+            </div>
+
+            <!-- Tech Badge Tag -->
+            <div class="absolute bottom-3 left-3 right-3">
+              <span class="inline-block text-[11px] font-bold text-sky-200 bg-slate-900/80 backdrop-blur-md px-2.5 py-0.5 rounded-md border border-slate-700/80">
+                {product.techBadge}
+              </span>
+            </div>
+          </div>
+
+          <!-- Body Content -->
+          <div class="p-5 sm:p-6 flex flex-col flex-grow">
+            
+            <h3 class="text-lg font-extrabold text-dark-slate tracking-tight leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+              {product.title}
+            </h3>
+
+            <p class="text-subtle text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
+              {product.description}
+            </p>
+
+            <!-- Features Checklist -->
+            <ul class="space-y-2 mb-6 mt-auto pt-4 border-t border-slate-100 text-xs text-slate-600">
+              {product.features.map((feat) => (
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{feat}</span>
+                </li>
+              ))}
+            </ul>
+
+            <!-- Pricing & Action Strip -->
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
+              <div class="flex flex-col">
+                <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Harga Produk</span>
+                <div class="flex items-baseline gap-1.5">
+                  <span class="text-lg font-black text-dark-slate tracking-tight">{product.price}</span>
+                  {product.originalPrice && (
+                    <span class="text-xs text-slate-400 line-through font-semibold">{product.originalPrice}</span>
+                  )}
+                </div>
+              </div>
+
+              <a 
+                href={product.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-dicoding-primary text-xs font-bold py-2.5 px-4 shadow-xs shrink-0"
+              >
+                <span>Beli di Lynk.id</span>
+                <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Store CTA Banner -->
+    <div class="mt-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white border border-slate-700 shadow-xl max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left relative overflow-hidden">
+      <!-- Glow effect -->
+      <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="space-y-2 relative z-10 max-w-xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold bg-blue-500/20 text-blue-300 border border-blue-400/30">
+          <span>🛍️ Habib Creations Storefront</span>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">
+          Lihat Seluruh Koleksi Source Code &amp; Dataset
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+          {lynkStoreInfo.tagline} Temukan template website top up game, scraper YouTube, quiz Python, dan modul AI lainnya.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center gap-3 relative z-10 shrink-0 w-full md:w-auto">
+        <a 
+          href={lynkStoreInfo.storeUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn-dicoding-primary text-sm font-bold px-6 py-3.5 w-full sm:w-auto shadow-md shadow-blue-500/30"
+        >
+          <span>Buka Store di Lynk.id</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
