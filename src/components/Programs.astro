@@ -24,15 +24,12 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
 
       <!-- Filter / Summary Badges -->
       <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white text-dark-slate border border-slate-200 shadow-xs">
-          Total {catalogPrograms.length} Program
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-white text-dark-slate border border-slate-200 shadow-xs">
+          Total {catalogPrograms.length} Program Unggulan
         </span>
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          {openCount} Sedang Buka
-        </span>
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 shadow-xs">
-          {upcomingCount} Segera Hadir
+          {openCount} Sedang Buka Pendaftaran
         </span>
       </div>
     </div>
@@ -102,7 +99,7 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
     </div>
 
     <!-- Programs Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-stretch">
       {catalogPrograms.map((program) => (
         <ProgramCard {...program} />
       ))}

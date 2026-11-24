@@ -392,53 +392,5 @@ export const catalogPrograms: CatalogProgram[] = [
         image: "/images/coding_camp_header.png",
         deadline: "31 Januari 2027 (SMK: 31 Des)",
         isFeatured: false
-    },
-    {
-        id: "aws-ai",
-        title: "AWS AI Academy 2026",
-        subtitle: "Amazon Web Services",
-        partner: "Amazon Web Services (AWS) & Dicoding",
-        status: "upcoming",
-        statusBadge: "Segera Hadir",
-        statusColor: "amber",
-        quota: "40.000 Kuota Peserta",
-        description: "Program beasiswa untuk meningkatkan kompetensi dalam bidang Cloud Computing, Machine Learning, dan Generative AI bersama kurikulum global AWS.",
-        tags: ["Segera Hadir", "Cloud & AI", "AWS Official", "Free Online"],
-        features: [
-            "Kurikulum Standar Industri Global AWS",
-            "Materi Machine Learning & Generative AI",
-            "Cloud Sandbox & Praktik Terbimbing",
-            "Sertifikat Kelulusan Resmi Industri"
-        ],
-        ctaLink: "#tentang",
-        ctaText: "Lihat Beasiswa Aktif",
-        detailsLink: "#programs",
-        image: "/images/aws-header.jpg",
-        deadline: "Batch Berikutnya",
-        isFeatured: false
-    },
-    {
-        id: "metc",
-        title: "Microsoft Elevate Training Center",
-        subtitle: "Microsoft x Dicoding",
-        partner: "Microsoft & Dicoding",
-        status: "upcoming",
-        statusBadge: "Segera Hadir",
-        statusColor: "purple",
-        quota: "Akses Terbuka",
-        description: "Pelajari teknologi Enterprise Microsoft Cloud & AI Fabric, selesaikan modul belajar mandiri, raih kesempatan mengikuti Hackathon dan tantangan inovasi berhadiah.",
-        tags: ["Segera Hadir", "Microsoft Azure", "AI Fabric", "Hackathon"],
-        features: [
-            "Akses Modul Microsoft & Dicoding",
-            "Materi Cloud, Fabric & Artificial Intelligence",
-            "Hackathon & Tantangan Inovasi",
-            "Sertifikat Kelulusan Resmi"
-        ],
-        ctaLink: "#tentang",
-        ctaText: "Lihat Beasiswa Aktif",
-        detailsLink: "#programs",
-        image: "/images/metc_header.png",
-        deadline: "Batch Berikutnya",
-        isFeatured: false
     }
 ];
