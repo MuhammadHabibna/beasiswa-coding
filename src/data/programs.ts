@@ -327,6 +327,7 @@ export interface CatalogProgram {
     description: string;
     tags: string[];
     features: string[];
+    mandatoryNotice?: string;
     ctaLink: string;
     ctaText: string;
     detailsLink: string;
@@ -347,10 +348,11 @@ export const catalogPrograms: CatalogProgram[] = [
         quota: "60.000 Kuota Peserta",
         description: "Beasiswa komprehensif untuk mencetak AI-Native Web Developer handal melalui penguasaan Artificial Intelligence, Prompting, Vibe Coding, hingga IBM Agentic Coding.",
         tags: ["Sedang Buka", "AI-Native Web Dev", "100% Gratis", "Sertifikasi IBM"],
+        mandatoryNotice: "WAJIB MENYELESAIKAN minimal 1 (satu) course di platform IBM SkillsBuild agar pendaftaran terhitung valid & eligible.",
         features: [
+            "WAJIB: Selesaikan min. 1 course di IBM SkillsBuild",
             "Beasiswa 100% Gratis secara Online",
             "Kurikulum Berstandar Global IBM & Dicoding",
-            "Akses Materi AI & Agentic Coding",
             "Sertifikat Kompetensi Resmi Industri"
         ],
         ctaLink: "https://www.dicoding.com/pijak/registration?ref=4086292",
@@ -359,6 +361,31 @@ export const catalogPrograms: CatalogProgram[] = [
         image: "/images/pijak_banner_2027.jpg",
         deadline: "31 Desember 2026",
         isFeatured: true
+    },
+    {
+        id: "dbs-aicamp",
+        title: "AI Camp 2026",
+        subtitle: "powered by DBS Foundation",
+        partner: "DBS Foundation & Dicoding",
+        status: "open",
+        statusBadge: "Sedang Dibuka",
+        statusColor: "emerald",
+        quota: "SMK, Mahasiswa & Umum",
+        description: "Program beasiswa 100% gratis dari DBS Foundation & Dicoding untuk mencetak AI Engineer & Data Scientist melalui Microlearning Bitt, Capstone Project, dan Hackathon.",
+        tags: ["Sedang Buka", "AI & Data Science", "Microlearning Bitt", "Konversi SKS"],
+        mandatoryNotice: "WAJIB MENYELESAIKAN Misi 1 di platform Bitt by Dicoding (minimal 1 course Financial Literacy dan 1 course Inspirational).",
+        features: [
+            "WAJIB: Selesaikan Misi 1 (1 Financial Literacy + 1 Inspirational)",
+            "Beasiswa 100% Gratis Online & Bersertifikat",
+            "Jalur AI Engineer (Mahasiswa) & Data Scientist (SMK)",
+            "Mentoring Expert & DBS AI Hackathon"
+        ],
+        ctaLink: "https://www.dicoding.com/aicamp/registration?ref=4086292",
+        ctaText: "Daftar AI Camp DBS",
+        detailsLink: "https://go.dbs.com/dbsfaicamp",
+        image: "/images/coding_camp_header.png",
+        deadline: "31 Januari 2027 (SMK: 31 Des)",
+        isFeatured: false
     },
     {
         id: "aws-ai",
@@ -382,30 +409,6 @@ export const catalogPrograms: CatalogProgram[] = [
         detailsLink: "#programs",
         image: "/images/aws-header.jpg",
         deadline: "Batch Berikutnya",
-        isFeatured: false
-    },
-    {
-        id: "dbs-aicamp",
-        title: "AI Camp 2026",
-        subtitle: "powered by DBS Foundation",
-        partner: "DBS Foundation & Dicoding",
-        status: "open",
-        statusBadge: "Sedang Dibuka",
-        statusColor: "emerald",
-        quota: "SMK, Mahasiswa & Umum",
-        description: "Program beasiswa 100% gratis dari DBS Foundation & Dicoding untuk mencetak AI Engineer & Data Scientist melalui Microlearning Bitt, Capstone Project, dan Hackathon.",
-        tags: ["Sedang Buka", "AI & Data Science", "Microlearning Bitt", "Konversi SKS"],
-        features: [
-            "Beasiswa 100% Gratis Online & Bersertifikat",
-            "Jalur AI Engineer (Mahasiswa) & Data Scientist (SMK)",
-            "Konversi SKS / PKL Kampus & Sekolah",
-            "Mentoring Expert & DBS AI Hackathon"
-        ],
-        ctaLink: "https://www.dicoding.com/aicamp/registration?ref=4086292",
-        ctaText: "Daftar AI Camp DBS",
-        detailsLink: "https://go.dbs.com/dbsfaicamp",
-        image: "/images/coding_camp_header.png",
-        deadline: "31 Januari 2027 (SMK: 31 Des)",
         isFeatured: false
     },
     {

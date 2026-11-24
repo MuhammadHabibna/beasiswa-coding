@@ -37,6 +37,44 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
       </div>
     </div>
 
+    <!-- Alert Box Penekanan Syarat Wajib -->
+    <div class="mb-12 p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-red-500/10 border-2 border-amber-400 shadow-sm max-w-4xl mx-auto text-left">
+      <div class="flex items-start gap-3 sm:gap-4">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-wrap items-center gap-2 mb-1.5">
+            <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-rose-600 text-white shadow-2xs">PENTING</span>
+            <h3 class="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight">Kewajiban Penyelesaian Modul Awal agar Pendaftaran Terhitung Valid!</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed mb-3">
+            Mendaftar formulir saja tidak otomatis menjamin status kelulusan administrasi Anda. Anda <strong class="text-slate-900 font-bold">WAJIB</strong> menyelesaikan misi awal berikut agar status pendaftaran valid &amp; lolos verifikasi:
+          </p>
+          <div class="grid sm:grid-cols-2 gap-3 pt-0.5">
+            <div class="p-3.5 rounded-xl bg-white border border-amber-300 shadow-2xs flex flex-col justify-between">
+              <div>
+                <span class="text-[11px] font-bold text-primary uppercase tracking-wider block mb-1">1. Program Pijak 2027</span>
+                <p class="text-xs text-slate-800 leading-snug">
+                  <strong class="text-rose-700 underline font-extrabold">WAJIB MENYELESAIKAN</strong> minimal <strong>1 (satu) course di IBM SkillsBuild</strong> setelah registrasi akun.
+                </p>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-amber-300 shadow-2xs flex flex-col justify-between">
+              <div>
+                <span class="text-[11px] font-bold text-red-600 uppercase tracking-wider block mb-1">2. AI Camp DBS Foundation</span>
+                <p class="text-xs text-slate-800 leading-snug">
+                  <strong class="text-rose-700 underline font-extrabold">WAJIB MENYELESAIKAN Misi 1</strong> di platform Bitt, yaitu minimal <strong>1 course Financial Literacy</strong> dan <strong>1 course Inspirational</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Programs Grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
       {catalogPrograms.map((program) => (

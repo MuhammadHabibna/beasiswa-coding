@@ -14,6 +14,7 @@ const {
   description, 
   tags, 
   features, 
+  mandatoryNotice,
   ctaLink, 
   ctaText, 
   detailsLink, 
@@ -102,9 +103,22 @@ const statusBadgeClasses = {
     </div>
 
     <!-- Description -->
-    <p class="text-subtle text-xs sm:text-sm leading-relaxed mb-5">
+    <p class="text-subtle text-xs sm:text-sm leading-relaxed mb-4">
       {description}
     </p>
+
+    <!-- Mandatory Notice Callout -->
+    {mandatoryNotice && (
+      <div class="mb-5 p-3 sm:p-3.5 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50/70 border border-amber-300 text-left flex items-start gap-2.5 shadow-2xs">
+        <div class="w-5 h-5 rounded-full bg-amber-500 text-white flex items-center justify-center shrink-0 mt-0.5 text-xs font-black shadow-xs">
+          !
+        </div>
+        <div class="text-[11px] leading-snug">
+          <span class="text-rose-700 font-extrabold uppercase tracking-wider block text-[10px] mb-0.5">⚠️ Syarat Wajib Kelayakan:</span>
+          <span class="text-amber-950 font-bold">{mandatoryNotice}</span>
+        </div>
+      </div>
+    )}
 
     <!-- Features -->
     <ul class="mb-6 space-y-2 text-left mt-auto pt-4 border-t border-slate-100">
