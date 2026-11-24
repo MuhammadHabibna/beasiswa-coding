@@ -351,6 +351,8 @@ export const catalogPrograms: CatalogProgram[] = [
         description: "Beasiswa komprehensif untuk mencetak AI-Native Web Developer handal melalui penguasaan Artificial Intelligence, Prompting, Vibe Coding, hingga IBM Agentic Coding.",
         tags: ["Sedang Buka", "AI-Native Web Dev", "100% Gratis", "Sertifikasi IBM"],
         mandatoryNotice: "WAJIB MENYELESAIKAN minimal 1 (satu) course di platform IBM SkillsBuild agar pendaftaran terhitung valid & eligible.",
+        guideImage: "/images/pijak_misi_guide.jpg",
+        guideCaption: "Contoh tampilan dashboard: Selesaikan minimal 1 course di IBM SkillsBuild (Prompting, Vibe Coding, AI Ethics, dsb)",
         features: [
             "WAJIB: Selesaikan min. 1 course di IBM SkillsBuild",
             "Beasiswa 100% Gratis secara Online",
