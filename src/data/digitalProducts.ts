@@ -27,7 +27,7 @@ export const featuredProducts: DigitalProduct[] = [
         techBadge: "Next.js 15 • Shadcn UI",
         description: "Aplikasi Pomodoro Timer berbasis web dengan gamifikasi virtual pet interaktif untuk membuat sesi belajar dan coding jadi seru dan terarah.",
         price: "IDR 25.000",
-        badge: "🎮 Gamified Tool",
+        badge: "Gamified Tool",
         image: "https://cdn.lynkid.my.id/products/11-12-2025/1765466137467_4634359.webp?width=400&quality=90",
         link: "https://lynk.id/habib.creations/57mkl2g215r5",
         features: [
@@ -44,7 +44,7 @@ export const featuredProducts: DigitalProduct[] = [
         techBadge: "Next.js 14 • Tailwind CSS",
         description: "Game adu kecepatan mengetik syntax kode pemrograman real-time khusus developer dan programmer untuk melatih muscle memory ngoding.",
         price: "IDR 25.000",
-        badge: "⚡ Developer Game",
+        badge: "Developer Game",
         image: "https://cdn.lynkid.my.id/products/10-12-2025/1765375122751_6970068.webp?width=400&quality=90",
         link: "https://lynk.id/habib.creations/w7212k7l3gd8",
         features: [
@@ -61,7 +61,7 @@ export const featuredProducts: DigitalProduct[] = [
         techBadge: "IndoBERT • DeBERTa • Python",
         description: "Pipeline NLP lengkap untuk Aspect-Based Sentiment Classification (ASBC), analisis sentimen, dan deteksi sarkasme menggunakan model IndoBERT & RoBERTa.",
         price: "IDR 35.000",
-        badge: "🧠 AI / NLP Model",
+        badge: "AI / NLP Model",
         image: "https://cdn.lynkid.my.id/products/29-12-2025/1766998960121_5844018.webp?width=400&quality=90",
         link: "https://lynk.id/habib.creations/j85enk287nke",
         features: [
@@ -78,7 +78,7 @@ export const featuredProducts: DigitalProduct[] = [
         techBadge: "React Vite • Apify API",
         description: "Dashboard analitik untuk scraping ribuan komentar TikTok secara otomatis, visualisasi grafik interaktif, dan export data ke format CSV/Excel.",
         price: "IDR 35.000",
-        badge: "📊 Data Scraper",
+        badge: "Data Scraper",
         image: "https://cdn.lynkid.my.id/products/13-12-2025/1765621209715_5321368.webp?width=400&quality=90",
         link: "https://lynk.id/habib.creations/6w31og8jmmvr",
         features: [
@@ -96,7 +96,7 @@ export const featuredProducts: DigitalProduct[] = [
         description: "Dataset 24.000+ data opini dan komentar publik yang telah dibersihkan dan dilabeli secara sistematis untuk keperluan analisis sentimen dan machine learning.",
         price: "IDR 15.000",
         originalPrice: "IDR 150.000",
-        badge: "🔥 Diskon 90%",
+        badge: "Diskon 90%",
         image: "https://cdn.lynkid.my.id/draft-products/24-01-2026/1769250279364_9616195.webp?width=400&quality=90",
         link: "https://lynk.id/habib.creations/ygmjo4yeqwl0",
         features: [
@@ -114,7 +114,7 @@ export const featuredProducts: DigitalProduct[] = [
         description: "Panduan lengkap teori dan praktik Machine Learning dari nol hingga mahir membuat model prediksi cerdas untuk portofolio karier AI Anda.",
         price: "IDR 5.000",
         originalPrice: "IDR 15.000",
-        badge: "⭐ Best Value",
+        badge: "Best Value",
         image: "https://cdn.lynkid.my.id/products/26-03-2025/1743007381159_6364327?width=400&quality=90",
         link: "https://lynk.id/habib.creations/qwlxp5y280wo",
         features: [
