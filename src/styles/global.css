@@ -12,22 +12,59 @@ body {
   @apply bg-background text-dark-slate font-sans selection:bg-primary-light selection:text-primary transition-colors duration-200;
 }
 
+/* Scroll reading progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1570ef, #0ba5ec, #6941c6);
+  z-index: 9999;
+  width: 0%;
+  pointer-events: none;
+  transition: width 0.08s ease-out;
+}
+
 /* Dicoding Clean Button Base */
 .btn-dicoding-primary {
-  @apply inline-flex items-center justify-center font-bold text-white bg-primary hover:bg-primary-dark transition-all duration-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0;
+  @apply inline-flex items-center justify-center font-bold text-white bg-primary hover:bg-primary-dark transition-all duration-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 relative overflow-hidden;
 }
 
 .btn-dicoding-navy {
-  @apply inline-flex items-center justify-center font-bold text-white bg-brand hover:bg-brand-dark transition-all duration-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0;
+  @apply inline-flex items-center justify-center font-bold text-white bg-brand hover:bg-brand-dark transition-all duration-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 relative overflow-hidden;
 }
 
 .btn-dicoding-secondary {
   @apply inline-flex items-center justify-center font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 transition-all duration-200 rounded-xl shadow-xs hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0;
 }
 
+/* Button Shimmer Effect on Hover */
+.btn-dicoding-primary::after,
+.btn-dicoding-navy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.btn-dicoding-primary:hover::after,
+.btn-dicoding-navy:hover::after {
+  animation: btn-shine 0.85s ease-in-out;
+}
+
+@keyframes btn-shine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
 /* Dicoding Badge Pills */
 .badge-pill-blue {
-  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-blue-200/80;
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-blue-200/80 transition-all duration-200 hover:border-blue-300;
 }
 
 .badge-pill-red {
@@ -37,6 +74,34 @@ body {
 .badge-pill-gray {
   @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200;
 }
+
+/* Card Interactive Hover Lift & Glow */
+.card-hover-lift {
+  @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-300;
+}
+
+/* Scroll Reveal Classes */
+.fade-in-up,
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.fade-in-up.visible,
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for grid items */
+.stagger-container > *:nth-child(1) { transition-delay: 50ms; }
+.stagger-container > *:nth-child(2) { transition-delay: 120ms; }
+.stagger-container > *:nth-child(3) { transition-delay: 190ms; }
+.stagger-container > *:nth-child(4) { transition-delay: 260ms; }
+.stagger-container > *:nth-child(5) { transition-delay: 330ms; }
+.stagger-container > *:nth-child(6) { transition-delay: 400ms; }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

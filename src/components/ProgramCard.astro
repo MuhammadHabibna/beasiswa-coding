@@ -35,11 +35,13 @@ const statusBadgeClasses = {
 }[statusColor] || 'bg-slate-100 text-slate-700 border-slate-200';
 ---
 
-<div class={`flex flex-col mx-auto w-full rounded-2xl border transition-all duration-300 relative bg-white overflow-hidden group ${
+<div class={`flex flex-col mx-auto w-full rounded-2xl border transition-all duration-300 relative bg-white overflow-hidden group hover:-translate-y-1.5 hover:shadow-xl ${
   isFeatured 
-    ? 'border-blue-400/90 shadow-md ring-1 ring-blue-300/50 hover:shadow-lg hover:border-blue-500' 
-    : 'border-slate-200/90 shadow-xs hover:shadow-md hover:border-slate-300'
+    ? 'border-blue-400/90 shadow-md ring-1 ring-blue-300/50 hover:border-blue-500' 
+    : 'border-slate-200/90 shadow-xs hover:border-blue-300'
 }`}>
+  <!-- Subtle Shine Sheen on Hover -->
+  <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none z-20"></div>
   
   <!-- Image Banner -->
   <div class="relative h-44 sm:h-48 w-full overflow-hidden bg-slate-100">

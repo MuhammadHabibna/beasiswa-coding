@@ -10,7 +10,7 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
   <div class="max-w-7xl mx-auto relative z-10 px-2 sm:px-4">
     
     <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
       <div class="badge-pill-blue mb-3.5">
         <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
         Direktori Beasiswa Terbuka
@@ -24,10 +24,10 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
 
       <!-- Filter / Summary Badges -->
       <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
-        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-white text-dark-slate border border-slate-200 shadow-xs">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-white text-dark-slate border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
           Total {catalogPrograms.length} Program Unggulan
         </span>
-        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs hover:border-emerald-300 transition-colors">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           {openCount} Sedang Buka Pendaftaran
         </span>
@@ -35,7 +35,7 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
     </div>
 
     <!-- Alert Box Penekanan Syarat Wajib -->
-    <div class="mb-12 p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-red-500/10 border-2 border-amber-400 shadow-sm max-w-4xl mx-auto text-left">
+    <div class="mb-12 p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-red-500/10 border-2 border-amber-400 shadow-sm max-w-4xl mx-auto text-left reveal-on-scroll">
       <div class="flex items-start gap-3 sm:gap-4">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').lengt
     </div>
 
     <!-- Programs Grid -->
-    <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-stretch">
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-stretch stagger-container reveal-on-scroll">
       {catalogPrograms.map((program) => (
         <ProgramCard {...program} />
       ))}
