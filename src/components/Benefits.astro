@@ -1,170 +1,99 @@
 ---
+import { pijak2027 } from '../data/programs';
 ---
 
----
----
-
-<section id="benefits" class="bg-slate-50 py-20 px-4 relative overflow-hidden">
-    <!-- Decorative Vector Background -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-blue-100/40 via-purple-100/20 to-transparent blur-3xl rounded-full opacity-60"></div>
-    </div>
-
-    <div class="max-[min(100vw,768px)] max-w-screen-xl mx-auto relative z-10 fade-in-up">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-slate-800 mb-4 tracking-tight">Perbandingan Program</h2>
-            <p class="text-subtle font-medium text-lg">Temukan yang paling pas untukmu.</p>
+<section id="benefit" class="bg-slate-50/70 py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto relative z-10 fade-in-up px-2 sm:px-4">
+        
+        <div class="text-center mb-16 max-w-2xl mx-auto">
+            <div class="badge-pill-blue mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Keunggulan Program
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark-slate tracking-tight mb-3">
+                Benefit Program Beasiswa Pijak 2027
+            </h2>
+            <p class="text-subtle text-base sm:text-lg leading-relaxed">
+                Raih akses penuh ke kurikulum berstandar internasional, sertifikasi industri terkemuka, dan dukungan karier profesional tanpa dipungut biaya.
+            </p>
         </div>
 
-        <!-- Desktop View (Table) -->
-        <div class="hidden md:block relative overflow-hidden shadow-lg sm:rounded-3xl max-w-4xl mx-auto border border-slate-200 bg-white/80 backdrop-blur-md group hover:shadow-xl transition-shadow duration-500">
-            <div class="absolute inset-0 bg-gradient-to-br from-transparent via-slate-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 pointer-events-none"></div>
-            <table class="w-full text-sm text-left text-slate-600 relative z-10">
-                <thead class="text-xs text-slate-700 uppercase bg-slate-100/50 border-b border-slate-200">
-                    <tr>
-                        <th scope="col" class="px-8 py-6 w-1/4 tracking-wider font-extrabold">Fitur</th>
-                        <th scope="col" class="px-8 py-6 w-1/4 text-blue-700 tracking-wider font-extrabold">Coding Camp 2026</th>
-                        <th scope="col" class="px-8 py-6 w-1/4 text-purple-700 tracking-wider font-extrabold">METC</th>
-                        <th scope="col" class="px-8 py-6 w-1/4 text-amber-700 tracking-wider font-extrabold">AWS AI Academy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
-                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
-                            Target Audience
-                        </th>
-                        <td class="px-8 py-5 font-medium">
-                            Mahasiswa, Siswa SMK, Umum
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Tech Professional, Aspiring Talent
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Seluruh WNI berminat di bidang AI
-                        </td>
-                    </tr>
-                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
-                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
-                            Fokus Utama
-                        </th>
-                        <td class="px-8 py-5 font-medium">
-                            Hard Skills (Web/AI/Data) + Soft Skills
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Microsoft Tech (Cloud, AI)
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            AI Development & Cloud (AWS, ML, Gen AI)
-                        </td>
-                    </tr>
-                    <tr class="border-b border-slate-100 hover:bg-blue-50/30 transition-colors duration-300">
-                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
-                            Sertifikat
-                        </th>
-                        <td class="px-8 py-5 font-medium">
-                            Sertifikat Kompetensi Dicoding
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Certificate of Completion / Badge
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Sertifikat Kelulusan/Kompetensi Industri
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-blue-50/30 transition-colors duration-300">
-                        <th scope="row" class="px-8 py-5 font-bold text-slate-800 whitespace-nowrap">
-                            Highlight
-                        </th>
-                        <td class="px-8 py-5 font-medium">
-                            Capstone Project & Konversi SKS
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Hackathon, Workshop & Rewards
-                        </td>
-                        <td class="px-8 py-5 font-medium">
-                            Hackathon, Amazon Bedrock & Kiro.dev
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- 4 Core Benefit Cards Grid with Dicoding Card Look -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Benefit 1 -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-300 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-2">Pelatihan 100% Gratis Online</h3>
+                    <p class="text-subtle text-sm leading-relaxed font-normal">
+                        Seluruh kurikulum IBM SkillsBuild dan Dicoding berstandar industri global dapat diakses secara gratis tanpa biaya registrasi maupun biaya tersembunyi.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary flex items-center gap-1.5">
+                    Standar Global IBM
+                </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-300 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-2">Sertifikat Kompetensi Resmi</h3>
+                    <p class="text-subtle text-sm leading-relaxed font-normal">
+                        Dapatkan sertifikat kompetensi yang diakui industri setelah menyelesaikan kurikulum dan lulus program Beasiswa Intensif untuk memperkuat CV portofolio Anda.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary flex items-center gap-1.5">
+                    Verifikasi Resmi Dicoding
+                </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-300 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-2">Akses Materi Seumur Hidup</h3>
+                    <p class="text-subtle text-sm leading-relaxed font-normal">
+                        Akses materi pembelajaran di IBM SkillsBuild dan Dicoding tetap terbuka seumur hidup, memungkinkan Anda me-review ilmu kapan saja di masa depan.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary flex items-center gap-1.5">
+                    Lifetime Learning
+                </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-300 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-2">Bimbingan Expert &amp; Praktisi</h3>
+                    <p class="text-subtle text-sm leading-relaxed font-normal">
+                        Pendampingan teknis dan non-teknis bersama instruktur ahli dari IBM dan tech company terkemuka lainnya selama tahapan Beasiswa Intensif.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary flex items-center gap-1.5">
+                    Mentoring &amp; Capstone
+                </div>
+            </div>
+
         </div>
 
-        <!-- Mobile View (Comparison Cards) -->
-        <div class="md:hidden space-y-8">
-            <!-- Coding Camp Card -->
-            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group/card">
-                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-blue-50/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 z-0"></div>
-                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-400/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover/card:bg-blue-400/20 transition-colors duration-700"></div>
-                <h3 class="text-2xl font-black text-blue-700 mb-6 tracking-tight relative z-10">Coding Camp 2026</h3>
-                <ul class="space-y-6 text-slate-700 relative z-10">
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
-                        <span class="font-medium">Mahasiswa, Siswa SMK, Umum</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fokus</span>
-                        <span class="font-medium">Hard Skills (Web/AI/Data) + Soft Skills</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Sertifikat</span>
-                        <span class="font-medium">Sertifikat Kompetensi Dicoding</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Highlight</span>
-                        <span class="font-medium">Capstone Project & Konversi SKS</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- METC Card -->
-             <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group/card">
-                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-purple-50/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 z-0"></div>
-                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-400/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover/card:bg-purple-400/20 transition-colors duration-700"></div>
-                <h3 class="text-2xl font-black text-purple-700 mb-6 tracking-tight relative z-10">METC</h3>
-                <ul class="space-y-6 text-slate-700 relative z-10">
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
-                        <span class="font-medium">Tech Professional, Aspiring Talent</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fokus</span>
-                        <span class="font-medium">Microsoft Tech (Cloud, AI)</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Sertifikat</span>
-                        <span class="font-medium">Certificate of Completion / Badge</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Highlight</span>
-                        <span class="font-medium">Hackathon, Workshop & Rewards</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- AWS AI Academy Card -->
-             <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group/card">
-                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-amber-50/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700 z-0"></div>
-                <div class="absolute top-0 right-0 w-32 h-32 bg-amber-400/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover/card:bg-amber-400/20 transition-colors duration-700"></div>
-                <h3 class="text-2xl font-black text-amber-700 mb-6 tracking-tight relative z-10">AWS AI Academy</h3>
-                <ul class="space-y-6 text-slate-700 relative z-10">
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Target Audience</span>
-                        <span class="font-medium">Seluruh WNI berminat di bidang AI</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fokus</span>
-                        <span class="font-medium">AI Development & Cloud (AWS, ML, Gen AI)</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Sertifikat</span>
-                        <span class="font-medium">Sertifikat Kelulusan/Kompetensi Industri</span>
-                    </li>
-                    <li>
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Highlight</span>
-                        <span class="font-medium">Hackathon, Amazon Bedrock & Kiro.dev</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 </section>

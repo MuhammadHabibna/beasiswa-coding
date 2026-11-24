@@ -1,0 +1,85 @@
+---
+import { pijak2027 } from '../data/programs';
+---
+
+<section id="tentang" class="bg-white py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto relative z-10 fade-in-up px-2 sm:px-4">
+        
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            <!-- Left Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="badge-pill-blue">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Tentang Program Pijak 2027
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-dark-slate tracking-tight leading-tight">
+                    Melanjutkan Kesuksesan Mencetak <span class="text-primary">Talenta Digital Andal</span> Menuju Era AI
+                </h2>
+
+                <p class="text-subtle text-base sm:text-lg leading-relaxed font-normal">
+                    Melanjutkan kesuksesan di periode sebelumnya yang berhasil mencetak lebih dari <strong class="text-dark-slate font-semibold">20.000 talenta IT di Indonesia</strong>, inisiatif global dari <strong class="text-dark-slate font-semibold">IBM SkillsBuild</strong> yang berkolaborasi dengan <strong class="text-dark-slate font-semibold">Dicoding</strong> kini kembali hadir dengan kurikulum yang jauh lebih adaptif terhadap kemajuan Artificial Intelligence!
+                </p>
+
+                <p class="text-subtle text-base sm:text-lg leading-relaxed font-normal">
+                    Pada periode 2027, Beasiswa Pijak membuka kesempatan bagi <span class="font-bold text-primary bg-primary-light px-2 py-0.5 rounded border border-blue-200/70">60.000 talenta IT di Indonesia</span> untuk mengembangkan keterampilan praktis di bidang Artificial Intelligence (AI). Anda akan dibekali keahlian yang relevan di industri—mulai dari dasar etika AI, vibe coding, prompt engineering, hingga rekayasa aplikasi web modern dengan <strong class="text-dark-slate font-bold">IBM Agentic Coding</strong>.
+                </p>
+
+                <!-- Dicoding Highlight Box -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-[#f0f9ff]/70 border border-blue-200/80 space-y-2.5">
+                    <div class="flex items-center gap-2 text-dark-slate font-bold text-sm sm:text-base">
+                        <div class="w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center text-primary shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        Fokus Target Peserta Baru 2027
+                    </div>
+                    <p class="text-xs sm:text-sm text-subtle leading-relaxed font-normal">
+                        Berbeda dengan tahun sebelumnya, periode 2027 menargetkan kelompok <strong>dewasa muda</strong> dan <strong>murid SMK / mahasiswa vokasi (D1–D4)</strong> serta kalangan umum. Pembaruan fokus ini dilakukan untuk memastikan perluasan akses AI benar-benar menjangkau talenta yang paling membutuhkan akselerasi skill untuk kesiapan kariernya.
+                    </p>
+                </div>
+
+                <div class="pt-2 flex flex-wrap gap-3.5">
+                    <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-primary text-sm font-bold px-6 py-3.5">
+                        Daftar Pijak 2027 Sekarang
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="#path" class="btn-dicoding-secondary text-sm font-bold px-6 py-3.5">
+                        Jelajahi Kurikulum
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual Card -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200/80 group bg-slate-900">
+                    <img 
+                        src="/images/pijak_banner_2027.jpg" 
+                        alt="Pijak 2027 Banner" 
+                        class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-500 opacity-95"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-5 left-5 right-5 text-white space-y-1">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-300">IBM SkillsBuild &amp; Dicoding</span>
+                        <h4 class="text-base font-extrabold leading-snug">Membuka Gerbang Karier di Era Ekonomi Berbasis AI</h4>
+                    </div>
+                </div>
+
+                <!-- Floating stat badge -->
+                <div class="absolute -bottom-5 -left-3 sm:-bottom-6 sm:-left-5 bg-white p-3.5 sm:p-4 rounded-xl shadow-md border border-slate-200 flex items-center gap-3 animate-float">
+                    <div class="w-11 h-11 rounded-lg bg-blue-50 border border-blue-200/70 text-primary flex items-center justify-center font-black text-lg shrink-0">
+                        60K
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Kuota Beasiswa</div>
+                        <div class="text-xs font-extrabold text-dark-slate">Talenta Digital Indonesia</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

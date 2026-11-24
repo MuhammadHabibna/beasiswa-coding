@@ -1,291 +1,55 @@
 ---
+import { pijak2027 } from '../data/programs';
+const { timeline } = pijak2027;
 ---
 
-<section id="timeline" class="bg-background py-20 px-4 fade-in-up">
-    <div class="max-w-screen-md mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-slate-800 mb-4 tracking-tight">Timeline Pelaksanaan</h2>
-            <p class="text-subtle font-medium">Pilih program untuk melihat jadwal detail kegiatan.</p>
-        </div>
-
-        <!-- Tab Switcher -->
-        <div class="flex p-1 bg-slate-100 rounded-xl mb-12 max-w-lg mx-auto border border-slate-200">
-            <button id="tab-metc" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100">
-                METC
-            </button>
-            <button id="tab-coding" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
-                Coding Camp
-            </button>
-            <button id="tab-pijak" class="flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700">
-                AWS AI Academy
-            </button>
-        </div>
+<section id="timeline" class="bg-white py-20 px-4 fade-in-up border-b border-slate-200/80">
+    <div class="max-w-3xl mx-auto px-2 sm:px-4">
         
-        <div class="relative border-l-2 border-slate-200 ml-4 lg:ml-8">
-            <!-- METC Timeline Container -->
-            <div id="timeline-metc" class="timeline-container active">
-                <!-- 1. Registrasi & Self Learning -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-purple-600">1</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 flex-wrap gap-3">
-                                Registrasi & Self Learning Course
-                            </h3>
-                            <time class="block mb-4 text-sm font-bold text-purple-600">16 Oktober 2025 - 14 Juni 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Akses penuh ke seluruh materi pelatihan level awal (Tahap 1 & 2).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Online Short Training -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-purple-600">3</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Online Short Training</h3>
-                            <time class="block mb-4 text-sm font-bold text-purple-600">Oktober 2025 - Juni 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Sesi pelatihan daring berkala mengenai platform Microsoft.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. Offline Workshop -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-purple-600">2</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Offline Workshop Training</h3>
-                            <time class="block mb-4 text-sm font-bold text-purple-600">Desember 2025 - April 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Pelatihan tatap muka intensif di berbagai lokasi.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6. Hackathon & Datathon -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-purple-600">6</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800">Hackathon & Datathon</h3>
-                            <time class="block mb-4 text-sm font-bold text-purple-600">Januari - April 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Kompetisi pengembangan solusi inovatif dan analisa data.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Deadline Belajar Seleksi -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-primary">4</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Deadline Seleksi Lanjutan</h3>
-                            <time class="block mb-4 text-sm font-bold text-primary">26 Maret 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Penyelesaian Tahap 1 & 2 untuk syarat akses kelas Level Lanjutan.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. Pengumuman Lanjutan -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-primary">5</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Pengumuman Level Lanjutan</h3>
-                            <time class="block mb-4 text-sm font-bold text-primary">31 Maret 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Pengumuman peserta terbaik yang lolos ke kelas level lanjutan.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 7. Innovation Expo -->
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-purple-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-purple-600">7</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Innovation Expo</h3>
-                            <time class="block mb-4 text-sm font-bold text-purple-600">Mei 2026</time>
-                            <p class="text-base font-normal text-subtle leading-relaxed">Pameran karya digital terbaik dari para peserta program.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="text-center mb-16">
+            <div class="badge-pill-blue mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Agenda Kegiatan
             </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark-slate mb-3 tracking-tight">
+                Timeline Pelaksanaan Pijak 2027
+            </h2>
+            <p class="text-subtle text-base sm:text-lg">Catat tanggal-tanggal penting agar tidak melewatkan setiap tahapan beasiswa.</p>
+        </div>
 
-            <!-- Coding Camp Timeline Container (Hidden by default) -->
-            <div id="timeline-coding" class="timeline-container hidden">
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300 z-20">
-                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
+        <div class="relative border-l-2 border-slate-200 ml-4 sm:ml-8 space-y-8">
+            {timeline.map((item) => (
+                <div class="ml-6 sm:ml-8 relative group">
+                    <span class="absolute flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 bg-brand text-white rounded-full -left-[37px] sm:-left-[45px] ring-4 ring-white shadow-xs font-bold text-xs sm:text-sm z-20 group-hover:bg-primary transition-colors duration-200">
+                        {item.step}
                     </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
+                    <div class="p-5 sm:p-6 bg-white border border-slate-200 rounded-2xl shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 relative overflow-hidden group/card">
                         <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 gap-3">Pendaftaran & Seleksi <span class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded-full border border-primary/20">OPEN</span></h3>
-                            <time class="block mb-4 text-sm font-bold text-primary">3 Maret - 31 Mei 2026</time>
-                            <p class="text-base font-normal text-subtle">Proses pendaftaran dan seleksi masuk Coding Camp.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300 z-20">
-                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                         <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Pengumuman Level Basic</h3>
-                            <time class="block mb-4 text-sm font-bold text-primary">3 Maret - 31 Mei 2026</time>
-                            <p class="text-base font-normal text-subtle">Akses kelas basic diberikan secara bertahap kepada pendaftar.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-primary/20 transition-all duration-300 z-20">
-                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/></svg>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-4 text-lg font-bold text-slate-800">Pengumuman Level Lanjutan</h3>
-                            <div class="space-y-3">
-                                <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 1:</span> 30 April 2026</div>
-                                <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 2:</span> 31 Mei 2026</div>
-                                <div class="flex items-center text-sm"><span class="w-2 h-2 bg-primary rounded-full mr-3"></span><span class="font-bold text-slate-700 mr-2">Batch 3:</span> 30 Juni 2026</div>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                                <h3 class="text-lg sm:text-xl font-bold text-dark-slate">
+                                    {item.title}
+                                </h3>
+                                {item.badge && (
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-primary border border-blue-200">
+                                        {item.badge}
+                                    </span>
+                                )}
                             </div>
+                            <time class="block mb-2.5 text-xs sm:text-sm font-bold text-primary flex items-center gap-1.5">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                {item.date}
+                            </time>
+                            <p class="text-subtle text-xs sm:text-sm leading-relaxed font-normal">
+                                {item.description}
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- AWS AI Academy Timeline Container (Hidden by default) -->
-            <div id="timeline-pijak" class="timeline-container hidden">
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-amber-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-amber-600">1</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-amber-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-amber-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="flex items-center mb-2 text-lg font-bold text-slate-800 gap-3">Pendaftaran Program <span class="bg-amber-100 text-amber-700 text-[10px] px-2 py-0.5 rounded-full border border-amber-200">OPEN</span></h3>
-                            <time class="block mb-4 text-sm font-bold text-amber-600">1 April – 25 Desember 2026</time>
-                            <p class="text-base font-normal text-subtle">Pendaftaran AWS AI Academy terbuka untuk 40.000 peserta.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-amber-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-amber-600">2</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-amber-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-amber-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Masa Belajar Mandiri</h3>
-                            <time class="block mb-4 text-sm font-bold text-amber-600">1 April – 31 Desember 2026</time>
-                            <p class="text-base font-normal text-subtle">Belajar secara online dan mandiri melalui platform Dicoding.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-12 ml-8 relative group hover:-translate-y-1 transition-transform duration-300">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-100 rounded-full -left-[41px] ring-8 ring-background group-hover:ring-amber-200 transition-all duration-300 z-20">
-                        <span class="text-sm font-bold text-amber-600">3</span>
-                    </span>
-                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-amber-300 hover:shadow-lg transition-all duration-300 relative overflow-hidden group/card">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-amber-50/40 to-transparent translate-x-[-100%] group-hover/card:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                        <div class="relative z-10">
-                            <h3 class="mb-2 text-lg font-bold text-slate-800">Periode Hackathon</h3>
-                            <time class="block mb-4 text-sm font-bold text-amber-600">Juli – September 2026 (Coming Soon)</time>
-                            <p class="text-base font-normal text-subtle">Implementasi kemampuan melalui hackathon bersama peserta lainnya.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
         </div>
-        
-        <p class="mt-12 text-center text-sm font-medium text-subtle bg-slate-50 py-3 rounded-xl border border-slate-200 italic">
-            *Jadwal dapat berubah sewaktu-waktu. Cek dashboard secara berkala.
+
+        <p class="mt-12 text-center text-xs font-medium text-slate-500 bg-slate-50 py-3 px-4 rounded-xl border border-slate-200/80 italic">
+            *Timeline dapat berubah sewaktu-waktu. Selalu pantau email terdaftar Anda dan dashboard resmi Dicoding.
         </p>
     </div>
 </section>
-
-<style>
-    .timeline-container {
-        transition: opacity 0.3s ease-in-out;
-    }
-    .timeline-container.hidden {
-        display: none;
-        opacity: 0;
-    }
-    .timeline-container.active {
-        display: block;
-        opacity: 1;
-    }
-</style>
-
-<script>
-    const setupTabs = () => {
-        const tabMetc = document.getElementById('tab-metc');
-        const tabCoding = document.getElementById('tab-coding');
-        const tabPijak = document.getElementById('tab-pijak');
-        const timelineMetc = document.getElementById('timeline-metc');
-        const timelineCoding = document.getElementById('timeline-coding');
-        const timelinePijak = document.getElementById('timeline-pijak');
-
-        if (!tabMetc || !tabCoding || !tabPijak || !timelineMetc || !timelineCoding || !timelinePijak) return;
-
-        const setActiveTab = (program) => {
-            // Reset all
-            [tabMetc, tabCoding, tabPijak].forEach(tab => {
-                tab.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 text-slate-500 hover:text-slate-700';
-            });
-            [timelineMetc, timelineCoding, timelinePijak].forEach(tl => {
-                tl.classList.remove('active');
-                tl.classList.add('hidden');
-            });
-
-            if (program === 'metc') {
-                tabMetc.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-purple-600 shadow-sm border border-purple-100';
-                timelineMetc.classList.remove('hidden');
-                timelineMetc.classList.add('active');
-            } else if (program === 'coding') {
-                tabCoding.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-blue-600 shadow-sm border border-blue-100';
-                timelineCoding.classList.remove('hidden');
-                timelineCoding.classList.add('active');
-            } else if (program === 'pijak') {
-                tabPijak.className = 'flex-1 py-2 px-3 text-sm font-bold rounded-lg transition-all duration-300 bg-white text-amber-600 shadow-sm border border-amber-100';
-                timelinePijak.classList.remove('hidden');
-                timelinePijak.classList.add('active');
-            }
-        };
-
-        tabMetc.addEventListener('click', () => setActiveTab('metc'));
-        tabCoding.addEventListener('click', () => setActiveTab('coding'));
-        tabPijak.addEventListener('click', () => setActiveTab('pijak'));
-    };
-
-    // Run on swap and initial load
-    document.addEventListener('astro:page-load', setupTabs);
-    setupTabs();
-</script>

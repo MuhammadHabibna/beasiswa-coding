@@ -1,0 +1,148 @@
+---
+import { pijak2027 } from '../data/programs';
+const { gamification } = pijak2027;
+---
+
+<section id="gamifikasi" class="bg-white py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto relative z-10 fade-in-up px-2 sm:px-4">
+        
+        <div class="text-center mb-16 max-w-2xl mx-auto">
+            <div class="badge-pill-blue mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Tantangan &amp; Hadiah Menarik
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark-slate tracking-tight mb-3">
+                Gamifikasi &amp; Komunitas Pijak 2027
+            </h2>
+            <p class="text-subtle text-base sm:text-lg leading-relaxed">
+                Ajak rekan belajar bersama, sebarkan inspirasi, dan menangkan hadiah bernilai puluhan juta rupiah selama periode pendaftaran!
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-7">
+            
+            <!-- 1. Pijak Pathfinder Challenge -->
+            <div class="bg-slate-50/70 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-50 text-primary border border-blue-200/60">
+                            Referral Challenge
+                        </span>
+                        <span class="text-xs font-semibold text-slate-500">
+                            Batas: 31 Des 2026
+                        </span>
+                    </div>
+
+                    <h3 class="text-2xl font-extrabold text-dark-slate mb-1">
+                        {gamification.referral.title}
+                    </h3>
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider mb-4">
+                        {gamification.referral.role}
+                    </p>
+                    <p class="text-subtle text-sm leading-relaxed mb-6 font-normal">
+                        {gamification.referral.description}
+                    </p>
+
+                    <!-- Hadiah List -->
+                    <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-xs mb-6">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-dark-slate mb-3 flex items-center gap-2">
+                            <div class="w-5 h-5 rounded bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            Hadiah 25 Posisi Teratas
+                        </h4>
+                        <div class="grid sm:grid-cols-2 gap-2 text-xs font-semibold text-slate-700">
+                            {gamification.referral.prizes.map((prize) => (
+                                <div class="flex items-center gap-2 p-2.5 bg-slate-50/70 rounded-lg border border-slate-100">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                                    <span>{prize}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <!-- Steps -->
+                    <div class="space-y-2 mb-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-600 block">Cara Berpartisipasi:</span>
+                        <ol class="space-y-1.5 text-xs text-subtle list-decimal ml-4 font-normal">
+                            {gamification.referral.steps.map((st) => (
+                                <li>{st}</li>
+                            ))}
+                        </ol>
+                    </div>
+                </div>
+
+                <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-primary text-xs font-bold py-3.5 px-6 w-full">
+                    Daftar &amp; Dapatkan Link Referral
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+
+            <!-- 2. Twibbon Challenge -->
+            <div class="bg-slate-50/70 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-50 text-primary border border-blue-200/60">
+                            Twibbon Challenge
+                        </span>
+                        <span class="text-xs font-semibold text-slate-500">
+                            Batas: 31 Des 2026
+                        </span>
+                    </div>
+
+                    <h3 class="text-2xl font-extrabold text-dark-slate mb-1">
+                        {gamification.twibbon.title}
+                    </h3>
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider mb-4">
+                        Tunjukkan Semangat Menjadi Bagian Masa Depan AI
+                    </p>
+                    <p class="text-subtle text-sm leading-relaxed mb-6 font-normal">
+                        Pasang Twibbon Pijak 2027, ceritakan alasan Anda ingin terjun ke dunia AI dan Web Development, lalu kumpulkan engagement tertinggi untuk memenangkan hadiah e-voucher!
+                    </p>
+
+                    <!-- Hadiah List -->
+                    <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-xs mb-6">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-dark-slate mb-2 flex items-center gap-2">
+                            <div class="w-5 h-5 rounded bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            Hadiah Pemenang
+                        </h4>
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-100 font-bold text-xs sm:text-sm text-dark-slate">
+                            {gamification.twibbon.prize}
+                        </div>
+                        <p class="mt-2 text-[11px] text-slate-500 italic">
+                            Hashtag resmi: <span class="font-mono text-primary font-semibold">{gamification.twibbon.hashtag}</span>
+                        </p>
+                    </div>
+
+                    <!-- Steps -->
+                    <div class="space-y-2 mb-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-600 block">Langkah Mengikuti:</span>
+                        <ol class="space-y-1.5 text-xs text-subtle list-decimal ml-4 font-normal">
+                            {gamification.twibbon.steps.map((st) => (
+                                <li>{st}</li>
+                            ))}
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href={gamification.twibbon.link} target="_blank" rel="noopener noreferrer" class="btn-dicoding-secondary text-xs font-bold py-3.5 px-4 flex-1">
+                        Unduh Twibbon (twb.nz)
+                        <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                    <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-primary text-xs font-bold py-3.5 px-4 flex-1">
+                        Submit di Formulir
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

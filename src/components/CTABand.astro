@@ -1,45 +1,38 @@
 ---
+import { pijak2027 } from '../data/programs';
 ---
-<section class="bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 py-20 px-4 text-center relative overflow-hidden group">
-    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-    <div class="absolute inset-0 bg-white/5 backdrop-blur-[1px]"></div>
-    
-    <!-- Animated Orbs -->
-    <div class="absolute -top-32 -left-32 w-[500px] h-[500px] bg-blue-400/30 rounded-full blur-[80px] group-hover:bg-blue-300/40 transition-colors duration-1000 animate-[pulse_6s_ease-in-out_infinite]"></div>
-    <div class="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-purple-400/30 rounded-full blur-[80px] group-hover:bg-purple-300/40 transition-colors duration-1000 animate-[pulse_8s_ease-in-out_infinite] animation-delay-1000"></div>
-    
-    <div class="relative z-10 max-w-4xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-md tracking-tight">Siap upgrade skill tahun ini?</h2>
-        <p class="text-blue-50/90 mb-10 max-w-2xl mx-auto text-lg md:text-xl font-medium">
-            Jangan lewatkan kesempatan emas ini. Daftar sekarang dan mulai perjalanan karir IT-mu bersama DBS Foundation, Microsoft, dan AWS.
+<section class="bg-gradient-to-b from-[#101828] via-[#161f30] to-[#0c111d] py-20 px-4 text-center relative overflow-hidden text-white border-b border-slate-800">
+    <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none z-0"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-500/10 blur-3xl rounded-full pointer-events-none z-0"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-4">
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/15 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Kuota Terbuka untuk 60.000 Talenta Digital
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5 tracking-tight leading-tight">
+            Siap Menjadi AI-Native Web Developer bersama Pijak 2027?
+        </h2>
+
+        <p class="text-slate-300 mb-9 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-normal">
+            Jangan lewatkan kesempatan emas ini. Tingkatkan kemampuan teknologi masa depan Anda bersama kurikulum internasional IBM SkillsBuild dan Dicoding secara 100% gratis.
         </p>
         
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="https://www.dicoding.com/codingcamp/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden text-blue-700 bg-white hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-white/50 font-bold rounded-xl text-lg px-8 py-4 text-center transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] duration-300">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-blue-500/10 to-transparent -translate-x-full hover:animate-[shimmer_1.5s_infinite]"></span>
-                <span class="relative z-10 flex items-center justify-center gap-2">
-                    Daftar Coding Camp
-                    <svg class="w-5 h-5 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </span>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-3.5">
+             <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-primary text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-blue-500/25">
+                <span>Daftar Pijak 2027 Sekarang (Gratis)</span>
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="https://www.dicoding.com/elevate/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden text-white border-2 border-white/80 hover:bg-white focus:ring-4 focus:outline-none focus:ring-white/50 hover:text-purple-700 font-bold rounded-xl text-lg px-8 py-4 text-center transition-all shadow-lg hover:shadow-2xl hover:border-white hover:-translate-y-1 hover:scale-[1.02] duration-300">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full hover:animate-[shimmer_1.5s_infinite]"></span>
-                <span class="relative z-10 flex items-center justify-center gap-2">
-                    Daftar METC
-                    <svg class="w-5 h-5 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </span>
-            </a>
-            <a href="https://aws.dicoding.com/register?ref=4086292" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden text-white bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 focus:ring-4 focus:outline-none focus:ring-amber-300 font-bold rounded-xl text-lg px-8 py-4 text-center transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] duration-300">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full hover:animate-[shimmer_1.5s_infinite]"></span>
-                <span class="relative z-10 flex items-center justify-center gap-2">
-                    Daftar AWS AI Academy
-                    <svg class="w-5 h-5 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </span>
+
+            <a href={pijak2027.faqLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center font-bold text-white bg-white/10 hover:bg-white/15 border border-white/20 transition-all duration-200 rounded-xl px-7 py-3.5 text-base w-full sm:w-auto">
+                <span>Baca FAQ &amp; Ketentuan</span>
             </a>
         </div>
         
-        <p class="mt-8 text-sm font-medium text-white/80">
-            Klik tombol &rarr; kamu akan diarahkan ke pendaftaran resmi Dicoding.
+        <p class="mt-7 text-xs font-medium text-slate-400">
+            Seluruh pendaftaran resmi dan konfirmasi akun dilakukan langsung di Dicoding.com.
         </p>
     </div>
 </section>

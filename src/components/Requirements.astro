@@ -1,106 +1,123 @@
 ---
+import { pijak2027 } from '../data/programs';
+const { requirements } = pijak2027;
 ---
 
-<section id="requirements" class="bg-slate-50 py-20 px-4 relative overflow-hidden">
-    <!-- Decorative Vector Background -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <svg class="absolute top-0 right-0 w-[500px] h-[500px] text-emerald-200/40 blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2" fill="currentColor" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path d="M47.7,-57.2C59.4,-47.3,64.9,-29.3,67.6,-11.1C70.3,7.1,70.2,25.6,61.8,40.1C53.4,54.6,36.7,65.1,18.7,70.6C0.7,76.1,-18.6,76.6,-35.1,69.5C-51.6,62.4,-65.4,47.7,-72.1,30.3C-78.8,12.9,-78.4,-7.2,-70.6,-23.7C-62.8,-40.2,-47.6,-53.1,-32,-61.7C-16.4,-70.3,2.4,-74.6,20.1,-70.1C37.8,-65.6,56,-45,-47.7,-57.2Z" transform="translate(100 100) scale(1.1)"></path>
-        </svg>
-    </div>
-
-    <div class="max-w-screen-xl mx-auto fade-in-up relative z-10">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-slate-800 mb-4">Syarat Pendaftaran</h2>
-            <p class="text-slate-600">Pastikan Anda memenuhi kriteria berikut sebelum mendaftar program.</p>
+<section id="prasyarat" class="bg-slate-50/70 py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto fade-in-up relative z-10 px-2 sm:px-4">
+        
+        <div class="text-center mb-16 max-w-2xl mx-auto">
+            <div class="badge-pill-blue mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Kriteria &amp; Kesiapan
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark-slate tracking-tight mb-3">
+                Syarat dan Ketentuan Pendaftaran
+            </h2>
+            <p class="text-subtle text-base sm:text-lg leading-relaxed">
+                Pastikan Anda memeriksa persyaratan umum, kualifikasi jalur peserta, serta spesifikasi perangkat keras sebelum melakukan pendaftaran.
+            </p>
         </div>
 
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-6">
-            <!-- Coding Camp Requirements -->
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-slate-200 hover:border-blue-400 transition-colors shadow-lg hover:shadow-xl relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/50 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                <div class="relative z-10">
-                    <h3 class="text-2xl font-bold text-blue-700 mb-6 border-b border-slate-100 pb-4">Coding Camp 2.0</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Warga Negara Indonesia (WNI)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Terbuka untuk umum</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Berkomitmen mengikuti program hingga akhir</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Memiliki laptop atau komputer, serta memiliki jaringan internet</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Belum pernah mendaftar program Coding Camp 2025 atau Coding Camp 2026 1.0</span>
-                    </li>
-                </ul>
+        <div class="grid md:grid-cols-3 gap-6 sm:gap-7">
+            
+            <!-- 1. Persyaratan Umum -->
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-4 border-b border-slate-100 pb-3">
+                        Persyaratan Umum
+                    </h3>
+                    <ul class="space-y-3 text-sm text-subtle font-medium">
+                        {requirements.general.map((req) => (
+                            <li class="flex items-start gap-2.5">
+                                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>{req}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary">
+                    Wajib Dipenuhi Semua Peserta
                 </div>
             </div>
 
-            <!-- METC Requirements -->
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-slate-200 hover:border-purple-400 transition-colors shadow-lg hover:shadow-xl relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-purple-50/50 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                <div class="relative z-10">
-                    <h3 class="text-2xl font-bold text-purple-700 mb-6 border-b border-slate-100 pb-4">METC</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Warga Negara Indonesia (WNI)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Terbuka untuk Tech Professional, Mahasiswa, atau Talenta Digital</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Memiliki ketertarikan kuat pada teknologi ekosistem Microsoft</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Memiliki akses ke laptop/komputer dan jaringan internet stabil</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Mematuhi tata tertib kegiatan dan workshop yang diselenggarakan</span>
-                    </li>
-                </ul>
+            <!-- 2. Pilihan Jalur Peserta -->
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-4 border-b border-slate-100 pb-3">
+                        Pilihan Jalur Peserta
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <!-- Jalur Vokasi -->
+                        <div class="p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-primary mb-0.5">
+                                1. Jalur Siswa / Mahasiswa Vokasi
+                            </h4>
+                            <p class="text-[11px] font-semibold text-slate-600 mb-2">Eligible Beasiswa Intensif</p>
+                            <ul class="text-xs text-subtle space-y-1 list-disc ml-4 font-normal">
+                                <li>Murid SMK aktif di seluruh Indonesia</li>
+                                <li>Mahasiswa vokasi aktif (D1, D2, D3, D4)</li>
+                                <li>Bersedia mengikuti Capstone Project</li>
+                            </ul>
+                        </div>
+
+                        <!-- Jalur Umum -->
+                        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-dark-slate mb-0.5">
+                                2. Jalur Umum &amp; Profesional
+                            </h4>
+                            <p class="text-[11px] font-semibold text-slate-600 mb-2">Eligible Beasiswa Progresif</p>
+                            <ul class="text-xs text-subtle space-y-1 list-disc ml-4 font-normal">
+                                <li>Masyarakat umum, fresh graduate, atau profesional</li>
+                                <li>Tidak sedang menempuh pendidikan vokasi</li>
+                                <li>Format pembelajaran mandiri (self-paced)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-primary">
+                    Pilih Sesuai Status Pendidikan Anda
                 </div>
             </div>
 
-            <!-- AWS AI Academy Requirements -->
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-slate-200 hover:border-amber-400 transition-colors shadow-lg hover:shadow-xl relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-amber-50/50 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 z-0"></div>
-                <div class="relative z-10">
-                    <h3 class="text-2xl font-bold text-amber-700 mb-6 border-b border-slate-100 pb-4">AWS AI Academy</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Terbuka untuk seluruh Warga Negara Indonesia</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Berminat meningkatkan skill dalam bidang artificial intelligence</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Memiliki laptop/komputer dan koneksi internet</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-slate-700">Bersedia belajar secara online dan mandiri hingga selesai</span>
-                    </li>
-                </ul>
+            <!-- 3. Syarat Perangkat -->
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-xs hover:shadow-md hover:border-blue-200 transition-all duration-200 flex flex-col justify-between group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-primary mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark-slate mb-4 border-b border-slate-100 pb-3">
+                        Ketentuan Perangkat
+                    </h3>
+                    <ul class="space-y-3 text-sm text-subtle font-medium">
+                        {requirements.device.map((dev) => (
+                            <li class="flex items-start gap-2.5">
+                                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>{dev}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-emerald-700">
+                    Spesifikasi Komputer / Laptop Minimal
                 </div>
             </div>
+
         </div>
+
     </div>
 </section>

@@ -1,61 +1,88 @@
 ---
+import { pijak2027 } from '../data/programs';
+
 const faqs = [
   {
-    question: "Apakah program ini berbayar?",
-    answer: "Tidak untuk Coding Camp dan AWS AI Academy. Keduanya 100% gratis secara online. Untuk METC, sebagian besar kegiatan bersifat gratis atau bersponsor, detail ada di halaman pendaftaran."
+    question: "Apakah Program Beasiswa Pijak 2027 dipungut biaya?",
+    answer: "Tidak sama sekali. Beasiswa Pijak 2027 sepenuhnya 100% GRATIS secara online tanpa biaya pendaftaran, biaya materi, atau biaya tersembunyi apapun karena program ini didukung penuh oleh inisiatif global IBM SkillsBuild dan Dicoding."
   },
   {
-    question: "Apakah perlu akun Dicoding?",
-    answer: "Ya, Anda wajib memiliki akun Dicoding untuk mendaftar karena seluruh materi dan progress belajar akan diakses melalui platform Dicoding."
+    question: "Siapa saja yang memenuhi syarat untuk mendaftar?",
+    answer: "Seluruh Warga Negara Indonesia (WNI) yang tidak sedang aktif mengikuti beasiswa lain di Dicoding. Periode 2027 memiliki fokus khusus untuk kelompok dewasa muda dan murid SMK / mahasiswa vokasi (D1/D2/D3/D4) aktif untuk Beasiswa Intensif, serta masyarakat umum / profesional untuk Beasiswa Progresif."
   },
   {
-    question: "Saya pemula, apakah bisa ikut?",
-    answer: "Tentu. Coding Camp dan AWS AI Academy memiliki kurikulum yang dirancang dari dasar. Pastikan Anda memiliki komitmen waktu untuk belajar."
+    question: "Apa perbedaan antara Beasiswa Pemula, Intensif, dan Progresif?",
+    answer: "Beasiswa Pemula adalah fondasi esensial pembelajaran mandiri di IBM SkillsBuild (AI, prompt engineering, etika, dan vibe coding) yang terbuka bagi seluruh pendaftar. Beasiswa Intensif adalah program lanjutan eksklusif khusus murid SMK / mahasiswa vokasi aktif yang mencakup kurikulum teknis web dev mendalam, IBM Agentic Coding, soft skills, mentoring rutin, dan Capstone Project. Sedangkan Beasiswa Progresif adalah jalur belajar mandiri untuk umum/profesional."
   },
   {
-    question: "Apa perbedaan utama Coding Camp, METC, dan AWS AI Academy?",
-    answer: "Coding Camp fokus intensif bootcamp (AI/Web/Data) dengan kurikulum jangka panjang. METC lebih fleksibel dengan fokus pada teknologi Microsoft (Cloud/AI) dan event (Hackathon). Sedangkan AWS AI Academy berfokus pada AI Development & Cloud dengan kurikulum AWS, Machine Learning, dan Generative AI menggunakan Amazon Bedrock & Kiro.dev."
+    question: "Apakah saya perlu memiliki laptop dengan spesifikasi tinggi?",
+    answer: "Tidak perlu spesifikasi tinggi. Komputer atau laptop pribadi dengan prosesor minimal setara Intel Core i3 / AMD Ryzen 3, RAM 4 GB (direkomendasikan 8 GB), OS Windows/macOS/Linux, dan koneksi internet stabil sudah cukup untuk mengikuti seluruh materi dan tugas."
   },
   {
-    question: "Apakah mendapatkan sertifikat?",
-    answer: "Ya, peserta yang lulus kelas di Dicoding akan mendapat Sertifikat Kompetensi. Untuk METC, peserta mendapatkan badge atau sertifikat sesuai ketentuan. AWS AI Academy memberikan sertifikat kelulusan/kompetensi yang diakui industri."
+    question: "Bagaimana tahapan seleksi untuk masuk ke Beasiswa Intensif?",
+    answer: "Langkah-langkahnya: (1) Daftar di platform Dicoding dan lengkapi formulir pendaftaran, (2) Unduh dan tanda tangani Surat Komitmen, (3) Selesaikan course mandiri prasyarat di IBM SkillsBuild, (4) Ikuti tes penilaian (general, teknis, kepribadian) dan unggah Surat Komitmen. Pengumuman peserta terpilih akan diumumkan pada pertengahan Januari 2027."
   },
   {
-    question: "Jika ada kendala pendaftaran, kontak ke mana?",
-    answer: "Silakan kunjungi halaman pendaftaran masing-masing program. Di sana terdapat link ke Help Center atau contact support resmi Dicoding."
+    question: "Apakah peserta akan mendapatkan sertifikat?",
+    answer: "Ya. Setiap peserta yang berhasil menyelesaikan modul kelas di Dicoding dan IBM SkillsBuild akan mendapatkan sertifikat resmi. Bagi lulusan Beasiswa Intensif, Anda akan memperoleh Sertifikat Kompetensi resmi serta transkrip nilai kelulusan yang diakui oleh industri teknologi."
+  },
+  {
+    question: "Kapan batas akhir pendaftaran Pijak 2027?",
+    answer: "Pendaftaran dan pemenuhan syarat administrasi serta penyelesaian kelas IBM SkillsBuild ditutup pada tanggal 31 Desember 2026. Kami menyarankan untuk mendaftar dan menyelesaikan kelas lebih awal agar tidak terburu-buru."
   }
 ];
 ---
 
-<section id="faq" class="bg-white py-20 px-4 relative overflow-hidden border-y border-slate-100">
-    <!-- Decorative Vector Background -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-100/40 via-purple-100/20 to-transparent blur-3xl rounded-full opacity-60 translate-x-1/3 -translate-y-1/3"></div>
-        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-purple-100/40 via-blue-100/20 to-transparent blur-3xl rounded-full opacity-60 -translate-x-1/3 translate-y-1/3"></div>
-    </div>
+<section id="faq" class="bg-white py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+    <div class="max-w-3xl mx-auto relative z-10 fade-in-up px-2 sm:px-4">
+        
+        <div class="text-center mb-16">
+            <div class="badge-pill-blue mb-3">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Tanya Jawab
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-dark-slate mb-3">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-subtle text-base sm:text-lg">
+                Temukan jawaban seputar persyaratan, alur belajar, dan seleksi Beasiswa Pijak 2027.
+            </p>
+        </div>
 
-    <div class="max-[min(100vw,768px)] max-w-screen-md mx-auto relative z-10 fade-in-up">
-        <h2 class="mb-10 text-3xl tracking-tight font-extrabold text-center text-slate-800">Frequently Asked Questions</h2>
-        <div class="space-y-4">
+        <div class="space-y-3.5">
             {faqs.map((faq) => (
-                <details class="group bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 open:bg-white open:ring-1 open:ring-blue-400/30 open:shadow-lg shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 overflow-hidden">
-                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-5 px-6 text-slate-800 text-lg hover:text-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50 rounded-2xl group-open:rounded-b-none outline-none relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 z-0 pointer-events-none"></div>
-                        <span class="relative z-10">{faq.question}</span>
-                        <span class="relative z-10 transition-transform duration-300 group-open:rotate-180 bg-white p-1 rounded-full border border-slate-200 group-hover:border-blue-300 shadow-sm">
-                            <svg fill="none" class="h-5 w-5 text-slate-500 group-hover:text-blue-600" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <details class="group bg-white rounded-xl border border-slate-200 open:border-blue-300 open:shadow-xs hover:border-slate-300 transition-all duration-200 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-4 px-5 sm:py-4.5 sm:px-6 text-dark-slate text-sm sm:text-base hover:text-primary transition-colors focus:outline-none rounded-xl group-open:rounded-b-none outline-none">
+                        <span class="pr-3 leading-snug">{faq.question}</span>
+                        <span class="transition-transform duration-200 group-open:rotate-180 bg-slate-50 p-1 rounded-md border border-slate-200 group-hover:border-blue-200 shrink-0">
+                            <svg fill="none" class="h-4 w-4 text-slate-500 group-hover:text-primary" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </span>
                     </summary>
-                    <div class="text-subtle mt-0 px-6 pb-6 pt-2 animate-fadeIn border-t border-slate-50/50">
-                        <p class="text-base leading-relaxed font-medium">
-                            {faq.answer}
-                        </p>
+                    <div class="text-subtle text-xs sm:text-sm leading-relaxed font-normal px-5 pb-5 pt-1 border-t border-slate-100">
+                        <p>{faq.answer}</p>
                     </div>
                 </details>
             ))}
         </div>
+
+        <!-- Dicoding Support & Help Docs Box -->
+        <div class="mt-12 text-center p-6 bg-slate-50/80 rounded-2xl border border-slate-200 space-y-2.5">
+            <h4 class="font-bold text-dark-slate text-sm">Masih memiliki pertanyaan spesifik seputar Pijak 2027?</h4>
+            <p class="text-xs text-subtle">Anda dapat membaca panduan lengkap di dokumen FAQ resmi atau menghubungi tim Dicoding.</p>
+            <div class="flex flex-wrap justify-center gap-3 pt-2">
+                <a href={pijak2027.faqLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-secondary text-xs font-bold py-2.5 px-4">
+                    <svg class="w-3.5 h-3.5 mr-1.5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    Buka Dokumen FAQ Lengkap
+                </a>
+                <a href="mailto:pijak@dicoding.com" class="btn-dicoding-secondary text-xs font-bold py-2.5 px-4">
+                    <svg class="w-3.5 h-3.5 mr-1.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    Email ke pijak@dicoding.com
+                </a>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -65,12 +92,5 @@ const faqs = [
     }
     details > summary::-webkit-details-marker {
         display: none;
-    }
-    .animate-fadeIn {
-        animation: fadeIn 0.4s ease-out forwards;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
     }
 </style>

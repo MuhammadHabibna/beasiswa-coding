@@ -1,90 +1,83 @@
 ---
+import { pijak2027 } from '../data/programs';
 ---
 
-<section class="relative bg-slate-50 pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[95vh] flex flex-col justify-center border-b border-slate-200">
-    <!-- Grid Pattern Background -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0"></div>
-    
-    <!-- Animated Soft Blobs -->
-    <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob z-0"></div>
-    <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-purple-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-70 animate-blob animation-delay-2000 z-0"></div>
-    <div class="absolute bottom-[-20%] left-[20%] w-[600px] h-[600px] bg-emerald-500/20 rounded-full mix-blend-multiply filter blur-[120px] opacity-60 animate-blob animation-delay-4000 z-0"></div>
+<section class="relative bg-gradient-to-b from-[#e0f2fe]/40 via-[#f0f9ff]/30 to-[#fcfcfd] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden border-b border-slate-200/70">
+    <!-- Dicoding Subtle Mesh Glow & Dot Overlay -->
+    <div class="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:20px_20px] opacity-40 pointer-events-none z-0"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-blue-300/25 to-transparent blur-3xl rounded-full pointer-events-none z-0"></div>
 
-    <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 text-center fade-in-up">
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center fade-in-up">
         
-        <!-- Premium Badge -->
-        <div class="inline-flex items-center justify-center px-5 py-2 mb-8 md:mb-10 text-xs md:text-sm font-bold text-slate-700 bg-white/60 backdrop-blur-md rounded-full border border-slate-200/50 shadow-xl shadow-slate-200/20 transition-all hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/80 duration-300 ring-1 ring-slate-900/5 cursor-default">
-            <span class="relative flex h-3 w-3 mr-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        <!-- Dicoding Live Announcement Badge -->
+        <div class="inline-flex items-center justify-center px-4 py-1.5 mb-7 text-xs sm:text-sm font-bold text-[#065986] bg-white/90 backdrop-blur-md rounded-full border border-blue-200 shadow-xs hover:border-blue-300 transition-all duration-200 cursor-default">
+            <span class="relative flex h-2.5 w-2.5 mr-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
             </span>
-            Pendaftaran Program Resmi Dibuka
+            Pendaftaran Pijak 2027 Resmi Dibuka • Kuota 60.000 Peserta
         </div>
         
-        <!-- Main Typography -->
-        <h1 class="mb-6 md:mb-8 text-[2.75rem] leading-[1.1] sm:text-6xl font-extrabold tracking-tight md:leading-tight lg:leading-[1.15] lg:text-[5rem] drop-shadow-sm">
-            <span class="text-slate-800 block mb-2 sm:mb-4">Upgrade Skill IT Lewat</span>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 drop-shadow-sm leading-normal block pb-2">
-                Beasiswa & Pelatihan
-            </span>
+        <!-- Main Headline -->
+        <h1 class="mb-6 text-3xl sm:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-dark-slate leading-[1.15] sm:leading-[1.15]">
+            Jadi <span class="text-primary">AI-Native Web Developer</span> bersama Pijak 2027
         </h1>
         
-        <p class="mb-10 md:mb-14 text-base sm:text-lg font-medium text-slate-600 lg:text-xl px-2 sm:px-16 xl:px-56 transition-colors duration-300 leading-relaxed">
-            Satu portal untuk mendaftar program unggulan hasil kolaborasi dengan tech giant. <br class="hidden md:block" /> Pilih <strong class="text-slate-800 font-bold bg-blue-100/50 px-2 py-0.5 rounded">Coding Camp</strong>, <strong class="text-slate-800 font-bold bg-purple-100/50 px-2 py-0.5 rounded">METC</strong>, atau <strong class="text-slate-800 font-bold bg-amber-100/50 px-2 py-0.5 rounded">AWS AI Academy</strong>.
-        </p>
-        
-        <!-- Action Buttons -->
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 w-full max-w-lg mx-auto sm:max-w-none relative z-20 flex-wrap">
-            <a href="https://www.dicoding.com/codingcamp/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-white rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 focus:ring-4 focus:ring-blue-300 transition-all shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-1.5 duration-300 overflow-hidden w-full sm:w-auto border border-blue-500/50">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
-                <span class="relative z-10 flex items-center gap-2">
-                    Daftar Coding Camp
-                </span>
-            </a>
-            <a href="https://www.dicoding.com/elevate/registration?ref=4394693" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-purple-700 bg-white/80 backdrop-blur-md rounded-2xl border border-slate-200 hover:border-purple-300 hover:bg-purple-50 focus:ring-4 focus:ring-purple-100 transition-all shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-1.5 duration-300 w-full sm:w-auto">
-                <span class="relative z-10 flex items-center gap-2">
-                    Daftar METC
-                </span>
-            </a>
-            <a href="https://aws.dicoding.com/register?ref=4086292" target="_blank" rel="noopener noreferrer" class="group relative inline-flex justify-center items-center py-4 px-8 text-sm md:text-base font-bold text-center text-white rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 focus:ring-4 focus:ring-amber-300 transition-all shadow-xl shadow-amber-500/30 hover:shadow-2xl hover:shadow-amber-500/40 hover:-translate-y-1.5 duration-300 overflow-hidden w-full sm:w-auto border border-amber-400/50">
-                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] animation-delay-500"></span>
-                <span class="relative z-10 flex items-center gap-2">
-                    Daftar AWS AI Academy
-                </span>
-            </a>
-        </div>
-        
-        <p class="mt-8 text-sm text-slate-500 font-medium flex items-center justify-center gap-2">
-            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            Proses registrasi dilakukan di Dicoding.com
+        <!-- Subtitle -->
+        <p class="mb-10 text-base sm:text-lg lg:text-xl font-normal text-subtle max-w-3xl mx-auto leading-relaxed">
+            Inisiatif beasiswa global kolaborasi <strong class="text-dark-slate font-semibold">IBM SkillsBuild</strong> &amp; <strong class="text-dark-slate font-semibold">Dicoding</strong>. Pelajari fundamental AI, Vibe Coding, Prompt Engineering, hingga pengembangan aplikasi web modern dengan <strong class="text-primary font-bold">IBM Agentic Coding</strong>.
         </p>
 
-        <!-- Partner Logos -->
-        <div class="mt-16 pt-8 border-t border-slate-200/60 relative w-full overflow-hidden">
-            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-center">Berkolaborasi Dengan</p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <span class="text-2xl font-black text-slate-800 tracking-tighter hover:text-red-600 transition-colors">DBS <span class="text-slate-600 font-semibold tracking-normal">Foundation</span></span>
-                <span class="text-2xl font-black text-slate-800 tracking-tight hover:text-blue-600 transition-colors">Microsoft</span>
-                <span class="text-2xl font-black text-slate-800 tracking-tight hover:text-amber-600 transition-colors">Amazon <span class="text-slate-600 font-semibold text-lg tracking-normal">Web Services</span></span>
+        <!-- Dicoding Metric Cards Strip -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3.5 sm:gap-4 max-w-4xl mx-auto mb-10 text-left">
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-sm transition-all duration-200">
+                <div class="text-2xl sm:text-3xl font-black text-primary tracking-tight">60.000</div>
+                <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Kuota Beasiswa</div>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-sm transition-all duration-200">
+                <div class="text-2xl sm:text-3xl font-black text-brand tracking-tight">100%</div>
+                <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Gratis Online</div>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-sm transition-all duration-200">
+                <div class="text-2xl sm:text-3xl font-black text-indigo-600 tracking-tight">Global</div>
+                <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Kurikulum IBM</div>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-sm transition-all duration-200">
+                <div class="text-2xl sm:text-3xl font-black text-emerald-600 tracking-tight">Resmi</div>
+                <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Sertifikat Industri</div>
             </div>
         </div>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-3.5 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto relative z-20">
+            <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-primary text-base px-7 py-3.5 w-full sm:w-auto shadow-md shadow-blue-500/20">
+                <span>Daftar Pijak 2027 Sekarang</span>
+                <svg class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            
+            <a href="#path" class="btn-dicoding-secondary text-base px-7 py-3.5 w-full sm:w-auto">
+                <span>Lihat Alur &amp; Kurikulum</span>
+            </a>
+        </div>
+        
+        <p class="mt-5 text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Batas Pendaftaran: <strong class="text-slate-700 font-bold">{pijak2027.deadline}</strong> • Registrasi resmi di Dicoding.com
+        </p>
+
+        <!-- Partner Logos Banner -->
+        <div class="mt-14 pt-8 border-t border-slate-200/80 relative w-full overflow-hidden">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-5 text-center">Inisiatif Kolaborasi Global</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-90 transition-all duration-300">
+                <div class="flex items-center gap-2 font-black text-2xl tracking-tighter text-dark-slate">
+                    <span class="font-mono text-3xl font-extrabold text-blue-700">IBM</span> SkillsBuild
+                </div>
+                <div class="h-6 w-px bg-slate-300 hidden sm:block"></div>
+                <div class="flex items-center gap-2 font-extrabold text-2xl tracking-tight text-brand">
+                    <span>dicoding</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
-
-<style>
-    @keyframes blob {
-        0% { transform: translate(0px, 0px) scale(1); }
-        33% { transform: translate(30px, -50px) scale(1.1); }
-        66% { transform: translate(-20px, 20px) scale(0.9); }
-        100% { transform: translate(0px, 0px) scale(1); }
-    }
-    .animate-blob {
-        animation: blob 7s infinite;
-    }
-    .animation-delay-2000 {
-        animation-delay: 2s;
-    }
-    .animation-delay-4000 {
-        animation-delay: 4s;
-    }
-</style>

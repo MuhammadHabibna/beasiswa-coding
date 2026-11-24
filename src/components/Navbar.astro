@@ -1,83 +1,136 @@
 ---
+import { pijak2027 } from '../data/programs';
 ---
-<nav class="fixed w-full z-50 top-0 start-0 border-b border-subtle-light/60 bg-white/80 backdrop-blur-lg shadow-sm transition-all duration-300">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 transition-all duration-300 group-hover:p-5">
+<nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-200/80 bg-white/90 backdrop-blur-md transition-all duration-200">
+  <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-4 sm:px-6 py-3.5">
     <!-- Brand -->
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse z-50 relative group outline-none">
-        <div class="relative overflow-hidden rounded-lg shadow-sm border border-slate-200 hover:shadow-glow transition-all duration-300 hover:-translate-y-0.5 bg-white">
-            <img src="/images/icon.jpg" alt="Dicoding Icon" class="w-10 h-10 object-cover group-hover:scale-110 transition-transform duration-500" />
+        <div class="relative overflow-hidden rounded-xl shadow-xs border border-slate-200 bg-white p-0.5 group-hover:border-blue-400 transition-all duration-200">
+            <img src="/images/icon.jpg" alt="Dicoding Icon" class="w-9 h-9 rounded-lg object-cover group-hover:scale-105 transition-transform duration-300" />
         </div>
-        <span class="self-center font-extrabold whitespace-nowrap text-slate-800 tracking-tight transition-colors duration-300">
-          <span class="hidden sm:inline text-xl">Beasiswa</span> <span class="text-primary hover:text-primary-dark transition-colors">Dicoding</span> <span class="hidden sm:inline">&amp;</span> <span class="text-secondary hover:text-purple-600 transition-colors">Promo</span>
-        </span>
+        <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+                <span class="font-extrabold text-lg text-dark-slate tracking-tight leading-none">
+                    dicoding
+                </span>
+                <span class="font-extrabold text-lg text-primary tracking-tight leading-none">
+                    pijak
+                </span>
+                <span class="text-[10px] font-extrabold bg-blue-50 text-primary border border-blue-200/80 px-2 py-0.5 rounded-full uppercase tracking-wider hidden sm:inline">
+                    2027
+                </span>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-500 tracking-tight">in collaboration with IBM SkillsBuild</span>
+        </div>
     </a>
 
     <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-subtle rounded-lg md:hidden hover:bg-slate-100 hover:text-primary focus:outline-none focus:ring-2 focus:ring-slate-100 z-50 relative transition-all duration-300" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Open main menu</span>
+    <button id="mobile-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-500 rounded-xl md:hidden hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-100 z-50 relative transition-all" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Buka menu navigasi</span>
         <svg class="w-5 h-5 hamburger-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
-        <svg class="w-5 h-5 close-icon hidden scale-75 opacity-0 transition-all duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+        <svg class="w-5 h-5 close-icon hidden scale-75 opacity-0 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
         </svg>
     </button>
 
     <!-- Desktop Menu -->
     <div class="hidden w-full md:block md:w-auto" id="navbar-desktop">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 bg-white/50 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent shadow-sm md:shadow-none items-center">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 rounded-xl md:flex-row md:space-x-7 rtl:space-x-reverse md:mt-0 md:border-0 items-center text-sm">
         <li>
-          <a href="#programs" class="relative block py-2 px-6 text-white bg-primary rounded-xl md:bg-primary font-bold hover:bg-primary-dark shadow-md hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden group" aria-current="page">
-             <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]"></span>
-             <span class="relative z-10">Programs</span>
+          <a href="#tentang" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Tentang</a>
+        </li>
+        <li>
+          <a href="#benefit" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Benefit</a>
+        </li>
+        <li>
+          <a href="#path" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Kurikulum</a>
+        </li>
+        <li>
+          <a href="#prasyarat" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Prasyarat</a>
+        </li>
+        <li>
+          <a href="#timeline" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Timeline</a>
+        </li>
+        <li>
+          <a href="#seleksi" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Seleksi</a>
+        </li>
+        <li>
+          <a href="#gamifikasi" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">Hadiah &amp; Komunitas</a>
+        </li>
+        <li>
+          <a href="#faq" class="text-slate-600 hover:text-primary transition-colors py-1.5 font-semibold">FAQ</a>
+        </li>
+        <li class="pl-1">
+          <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="btn-dicoding-navy text-xs font-bold px-4 py-2.5">
+             <span>Daftar Sekarang</span>
           </a>
-        </li>
-        <li>
-          <a href="#benefits" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">Benefits</a>
-        </li>
-        <li>
-          <a href="#timeline" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">Timeline</a>
-        </li>
-        <li>
-          <a href="#faq" class="block py-2 px-3 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary-dark transition-all duration-300">FAQ</a>
         </li>
       </ul>
     </div>
   </div>
 
   <!-- Mobile Drawer Overlay -->
-  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden flex flex-col pt-24 px-6 pb-8 shadow-2xl">
-      <ul class="flex flex-col space-y-4 text-xl font-bold w-full">
+  <div id="mobile-drawer" class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-24 px-6 pb-8 shadow-2xl overflow-y-auto">
+      <ul class="flex flex-col space-y-3 text-base font-bold w-full">
         <li>
-          <a href="#programs" class="mobile-link flex items-center justify-between py-4 px-6 bg-blue-50/50 border border-blue-100 rounded-2xl text-blue-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 shadow-sm transition-all duration-300 group">
-              <span>Programs</span>
-              <svg class="w-5 h-5 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <a href="#tentang" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Tentang Program</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </li>
         <li>
-          <a href="#benefits" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
-              <span>Benefits</span>
-              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <a href="#benefit" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Benefit Beasiswa</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </li>
         <li>
-          <a href="#timeline" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
-              <span>Timeline</span>
-              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <a href="#path" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Alur &amp; Kurikulum Belajar</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </li>
         <li>
-          <a href="#faq" class="mobile-link flex items-center justify-between py-4 px-6 rounded-2xl text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-300 group">
+          <a href="#prasyarat" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Syarat &amp; Perangkat</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#timeline" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Timeline Jadwal</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#seleksi" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Tahapan Seleksi</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#gamifikasi" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
+              <span>Hadiah &amp; Komunitas</span>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#faq" class="mobile-link flex items-center justify-between py-3 px-4 rounded-xl text-slate-800 hover:bg-slate-50 hover:text-primary transition-all">
               <span>FAQ</span>
-              <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </li>
+        <li class="pt-3">
+          <a href={pijak2027.ctaLink} target="_blank" rel="noopener noreferrer" class="mobile-link btn-dicoding-primary w-full py-3.5 px-4 text-sm font-extrabold shadow-sm">
+              <span>Daftar Pijak 2027 Sekarang</span>
           </a>
         </li>
       </ul>
       
-      <!-- Mobile Drawer Footer Info -->
-      <div class="mt-auto items-center justify-center flex flex-col space-y-4 pt-8 border-t border-slate-100">
-           <img src="/images/icon.jpg" alt="Dicoding Logo" class="w-12 h-12 rounded-xl shadow-sm border border-slate-200" />
-           <p class="text-sm font-medium text-slate-500 text-center">Beasiswa Coding & AI Hub<br/>© 2026 Dicoding Promo</p>
+      <div class="mt-auto items-center justify-center flex flex-col space-y-2 pt-6 border-t border-slate-100 text-center">
+           <p class="text-xs font-semibold text-slate-500">Pijak 2027 • IBM SkillsBuild &amp; Dicoding</p>
       </div>
   </div>
 </nav>
@@ -93,18 +146,12 @@
         btn.addEventListener('click', () => {
             const isExpanded = btn.getAttribute('aria-expanded') === 'true';
             btn.setAttribute('aria-expanded', !isExpanded);
-            
             drawer.classList.toggle('translate-x-full');
-            
-            // Toggle icons
             hamburgerIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
-            
-            // Toggle body scroll
             document.body.classList.toggle('overflow-hidden');
         });
 
-        // Close drawer when link clicked
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 drawer.classList.add('translate-x-full');
