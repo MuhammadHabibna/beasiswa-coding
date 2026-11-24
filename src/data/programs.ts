@@ -314,3 +314,122 @@ export const pijak2027: ProgramData = {
 
 // Export backward compatibility object if needed
 export const currentProgram = pijak2027;
+
+export interface CatalogProgram {
+    id: string;
+    title: string;
+    subtitle: string;
+    partner: string;
+    status: 'open' | 'upcoming';
+    statusBadge: string;
+    statusColor: 'emerald' | 'amber' | 'blue' | 'purple';
+    quota: string;
+    description: string;
+    tags: string[];
+    features: string[];
+    ctaLink: string;
+    ctaText: string;
+    detailsLink: string;
+    image: string;
+    deadline: string;
+    isFeatured?: boolean;
+}
+
+export const catalogPrograms: CatalogProgram[] = [
+    {
+        id: "pijak2027",
+        title: "Pijak 2027",
+        subtitle: "in collaboration with IBM SkillsBuild",
+        partner: "IBM SkillsBuild & Dicoding",
+        status: "open",
+        statusBadge: "Sedang Dibuka",
+        statusColor: "emerald",
+        quota: "60.000 Kuota Peserta",
+        description: "Beasiswa komprehensif untuk mencetak AI-Native Web Developer handal melalui penguasaan Artificial Intelligence, Prompting, Vibe Coding, hingga IBM Agentic Coding.",
+        tags: ["Sedang Buka", "AI-Native Web Dev", "100% Gratis", "Sertifikasi IBM"],
+        features: [
+            "Beasiswa 100% Gratis secara Online",
+            "Kurikulum Berstandar Global IBM & Dicoding",
+            "Akses Materi AI & Agentic Coding",
+            "Sertifikat Kompetensi Resmi Industri"
+        ],
+        ctaLink: "https://www.dicoding.com/pijak/registration?ref=4086292",
+        ctaText: "Daftar Beasiswa Pijak",
+        detailsLink: "#tentang",
+        image: "/images/pijak_banner_2027.jpg",
+        deadline: "31 Desember 2026",
+        isFeatured: true
+    },
+    {
+        id: "aws-ai",
+        title: "AWS AI Academy 2026",
+        subtitle: "Amazon Web Services",
+        partner: "Amazon Web Services (AWS) & Dicoding",
+        status: "upcoming",
+        statusBadge: "Segera Hadir",
+        statusColor: "amber",
+        quota: "40.000 Kuota Peserta",
+        description: "Program beasiswa untuk meningkatkan kompetensi dalam bidang Cloud Computing, Machine Learning, dan Generative AI bersama kurikulum global AWS.",
+        tags: ["Segera Hadir", "Cloud & AI", "AWS Official", "Free Online"],
+        features: [
+            "Kurikulum Standar Industri Global AWS",
+            "Materi Machine Learning & Generative AI",
+            "Cloud Sandbox & Praktik Terbimbing",
+            "Sertifikat Kelulusan Resmi Industri"
+        ],
+        ctaLink: "#tentang",
+        ctaText: "Lihat Beasiswa Aktif",
+        detailsLink: "#programs",
+        image: "/images/aws-header.jpg",
+        deadline: "Batch Berikutnya",
+        isFeatured: false
+    },
+    {
+        id: "coding-camp",
+        title: "Coding Camp 2026 2.0",
+        subtitle: "Powered by DBS Foundation",
+        partner: "DBS Foundation & Dicoding",
+        status: "upcoming",
+        statusBadge: "Segera Hadir",
+        statusColor: "blue",
+        quota: "Beasiswa Intensif",
+        description: "Program pelatihan coding intensif untuk mencetak talenta digital siap kerja dengan fokus pada hard skills teknis, mentoring, dan pengembangan soft skills.",
+        tags: ["Segera Hadir", "Full-Stack Dev", "Data Science", "Mentoring"],
+        features: [
+            "Pelatihan 100% Gratis & Terbimbing",
+            "Pilihan Track: Full-Stack & Data",
+            "Bimbingan Expert Praktisi Industri",
+            "Portofolio Riil & Capstone Project"
+        ],
+        ctaLink: "#tentang",
+        ctaText: "Lihat Beasiswa Aktif",
+        detailsLink: "#programs",
+        image: "/images/coding_camp_header.png",
+        deadline: "Batch Berikutnya",
+        isFeatured: false
+    },
+    {
+        id: "metc",
+        title: "Microsoft Elevate Training Center",
+        subtitle: "Microsoft x Dicoding",
+        partner: "Microsoft & Dicoding",
+        status: "upcoming",
+        statusBadge: "Segera Hadir",
+        statusColor: "purple",
+        quota: "Akses Terbuka",
+        description: "Pelajari teknologi Enterprise Microsoft Cloud & AI Fabric, selesaikan modul belajar mandiri, raih kesempatan mengikuti Hackathon dan tantangan inovasi berhadiah.",
+        tags: ["Segera Hadir", "Microsoft Azure", "AI Fabric", "Hackathon"],
+        features: [
+            "Akses Modul Microsoft & Dicoding",
+            "Materi Cloud, Fabric & Artificial Intelligence",
+            "Hackathon & Tantangan Inovasi",
+            "Sertifikat Kelulusan Resmi"
+        ],
+        ctaLink: "#tentang",
+        ctaText: "Lihat Beasiswa Aktif",
+        detailsLink: "#programs",
+        image: "/images/metc_header.png",
+        deadline: "Batch Berikutnya",
+        isFeatured: false
+    }
+];

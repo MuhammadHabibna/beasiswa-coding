@@ -1,21 +1,66 @@
 ---
-import { codingCamp, metc, aws } from '../data/programs';
+import { catalogPrograms } from '../data/programs';
 import ProgramCard from './ProgramCard.astro';
+
+const openCount = catalogPrograms.filter(p => p.status === 'open').length;
+const upcomingCount = catalogPrograms.filter(p => p.status === 'upcoming').length;
 ---
 
-<section id="programs" class="bg-gray-50 py-20 px-4">
-    <div class="max-w-screen-xl mx-auto">
-        <div class="mx-auto max-w-screen-md text-center mb-12 lg:mb-16">
-            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-slate-800">Program Pilihan</h2>
-            <p class="font-light text-slate-600 sm:text-xl">
-                Pilih jalur yang sesuai dengan status dan tujuan karirmu saat ini.
-            </p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            <ProgramCard {...codingCamp} primaryColor="blue" />
-            <ProgramCard {...metc} primaryColor="purple" />
-            <ProgramCard {...aws} primaryColor="emerald" />
-        </div>
+<section id="programs" class="bg-slate-50/70 py-20 px-4 relative overflow-hidden border-b border-slate-200/80">
+  <div class="max-w-7xl mx-auto relative z-10 px-2 sm:px-4">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="badge-pill-blue mb-3.5">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Direktori Beasiswa Terbuka
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-dark-slate tracking-tight leading-tight mb-4">
+        Katalog Program <span class="text-primary">Beasiswa Coding &amp; AI</span>
+      </h2>
+      <p class="text-subtle text-base sm:text-lg leading-relaxed">
+        Pilih program beasiswa yang sesuai dengan minat dan tujuan karier digital Anda. Mulai dari yang sedang membuka pendaftaran hingga batch beasiswa mendatang bersama mitra teknologi global.
+      </p>
+
+      <!-- Filter / Summary Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white text-dark-slate border border-slate-200 shadow-xs">
+          Total {catalogPrograms.length} Program
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          {openCount} Sedang Buka
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 shadow-xs">
+          {upcomingCount} Segera Hadir
+        </span>
+      </div>
     </div>
+
+    <!-- Programs Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
+      {catalogPrograms.map((program) => (
+        <ProgramCard {...program} />
+      ))}
+    </div>
+
+    <!-- Extensibility Notice / Info Strip -->
+    <div class="mt-12 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 text-primary flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-dark-slate">Program Lain Akan Terus Ditambahkan</h4>
+          <p class="text-xs text-subtle">Katalog ini terus diperbarui dengan program beasiswa coding, AI, dan pelatihan IT terbaru di Indonesia.</p>
+        </div>
+      </div>
+      <a href="#tentang" class="btn-dicoding-secondary text-xs px-4 py-2 shrink-0 font-bold">
+        Lihat Detail Program Aktif &darr;
+      </a>
+    </div>
+
+  </div>
 </section>
