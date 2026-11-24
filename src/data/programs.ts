@@ -328,6 +328,8 @@ export interface CatalogProgram {
     tags: string[];
     features: string[];
     mandatoryNotice?: string;
+    guideImage?: string;
+    guideCaption?: string;
     ctaLink: string;
     ctaText: string;
     detailsLink: string;
@@ -374,6 +376,8 @@ export const catalogPrograms: CatalogProgram[] = [
         description: "Program beasiswa 100% gratis dari DBS Foundation & Dicoding untuk mencetak AI Engineer & Data Scientist melalui Microlearning Bitt, Capstone Project, dan Hackathon.",
         tags: ["Sedang Buka", "AI & Data Science", "Microlearning Bitt", "Konversi SKS"],
         mandatoryNotice: "WAJIB MENYELESAIKAN Misi 1 di platform Bitt by Dicoding (minimal 1 course Financial Literacy dan 1 course Inspirational).",
+        guideImage: "/images/dbs_aicamp_misi_guide.png",
+        guideCaption: "Contoh tampilan dashboard pemilihan kelas Misi 1 (Financial Literacy & Inspirational Series)",
         features: [
             "WAJIB: Selesaikan Misi 1 (1 Financial Literacy + 1 Inspirational)",
             "Beasiswa 100% Gratis Online & Bersertifikat",
